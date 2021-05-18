@@ -1,0 +1,4 @@
+﻿  test1.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\test1.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  LINK : 没有找到 A:\Programer\音乐\Albert_C\VS-C\DNS\Debug\DNS.exe 或上一个增量链接没有生成它；正在执行完全链接
+  DNS.vcxproj -> A:\Programer\音乐\Albert_C\VS-C\DNS\Debug\DNS.exe
