@@ -1,8 +1,8 @@
-//#ifndef dnsRelayC
-//#define dnsRelayC
-//#include"dnsRelay.h"
+#ifndef dnsRelayC
+#define dnsRelayC
+#include"dnsRelay.h"
 //
-//#endif // !dnsRelayC
+#endif // !dnsRelayC
 //
 //#if 1
 //int main() {

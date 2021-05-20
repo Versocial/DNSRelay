@@ -1,5 +1,6 @@
 #ifndef LogC
 #define LogC
+
 #include"log.h"
 static FILE* _Log_File;
 static time_t _Log_rawTime;

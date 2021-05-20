@@ -139,9 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dns.c" />
     <ClCompile Include="dnsInfo.c" />
     <ClCompile Include="dnsRelay.c" />
-    <ClCompile Include="Header.c" />
     <ClCompile Include="log.c" />
     <ClCompile Include="sock.c" />
     <ClCompile Include="test1.c" />
@@ -149,9 +149,11 @@
     <ClCompile Include="test3.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dns.h" />
     <ClInclude Include="dnsInfo.h" />
     <ClInclude Include="dnsRelay.h" />
     <ClInclude Include="log.h" />
+    <ClInclude Include="sock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

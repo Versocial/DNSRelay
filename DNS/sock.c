@@ -1,10 +1,12 @@
 #ifndef SockC //解决windows linux 差异
 #define SockC
-#include "dnsRelay.h"
+#include "sock.h"
+
 #ifdef WINDOWS
 #define LengthType int
 static SOCKET servSock;
 #endif // WINDOWS
+
 #ifdef LINUX
 #define LengthType ssize_t
 static int servSock;
