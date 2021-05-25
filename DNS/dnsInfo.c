@@ -1,4 +1,5 @@
 #include "dnsInfo.h"
+#include<time.h>
 #include <string.h>
 int initFile(const char* path)
 {
@@ -9,6 +10,7 @@ int initFile(const char* path)
 		struct dnsInfo* temp = calloc(1, sizeof(struct dnsInfo));//calloc 自动初始化为0
 		fscanf(file, temp->url);
 		fscanf(file, temp->ip);
+		temp->endTime = 0;
 		temp->next = theInfo[*(temp->url)];
 		theInfo[*(temp->url)] = temp;
 	}
@@ -16,11 +18,12 @@ int initFile(const char* path)
 	return 0;
 }
 
-void add(const char* ip, const char* url)
+void add(const char* ip, const char* url,time_t ttl)
 {
 	struct dnsInfo* temp = calloc(1,sizeof(struct dnsInfo));//calloc 自动初始化为0
 	temp->next = theInfo[*url];
 	theInfo[*url] = temp;
+	 temp->endTime=time(NULL)+ttl;
 	strncpy(temp->ip, ip,maxIpLen);
 	strncpy(temp->url, url, maxUrlLen);
 }

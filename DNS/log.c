@@ -2,6 +2,7 @@
 #define LogC
 
 #include"log.h"
+static int mod = 0;
 static FILE* _Log_File;
 static time_t _Log_rawTime;
 static char _Log_TimeBuffer[50];
@@ -19,11 +20,16 @@ void log(const char* strFormat, ...) {
 	time(&_Log_rawTime);
 	struct tm* time = localtime(&_Log_rawTime);
 	strftime(_Log_TimeBuffer, sizeof(_Log_TimeBuffer), "\n[ %Y/%m/%d %H:%M:%S ]   ", time);
-	printf(_Log_TimeBuffer);
+	if (mod == 0) { rintf(_Log_TimeBuffer); }
 	fprintf(_Log_File, _Log_TimeBuffer);
 	va_list ap;
 	va_start(ap, strFormat);
 	vfprintf(_Log_File, strFormat, ap);
+	if (mod == 0)vprintf( strFormat, ap);
+}
+
+void setLogMod(int Mod) {
+	mod = Mod;
 }
 
 #endif // !LogC

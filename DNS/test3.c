@@ -2,7 +2,7 @@
 #include "log.h"
 
 #define LOGPATH "../res/log.txt"
-int main() {
-	initLog(LOGPATH);
-	log("傻逼-----%d----stupid", 100);
-}
+//int main() {
+//	initLog(LOGPATH);
+//	log("stupid-----%d----stupid", 100);
+//}

@@ -15,6 +15,7 @@
 #endif // LINUX
 
 //sock.c
+void initSock();
 struct sockaddr_in createSockAddr(const char* str);
 int recvStringFrom(char* buf, int len, SOCKADDR* clientAddr);
 int sendStringTo(char* buf, int len, SOCKADDR* clientAddr);
