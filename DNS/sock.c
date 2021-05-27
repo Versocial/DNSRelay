@@ -34,13 +34,13 @@ void initSock()
 
 inline LengthType sendStringTo(char*buf,int len, SOCKADDR* clientAddr)
 {
-  return   sendto(servSock, buf,len, 0, (struct sockaddr*)clientAddr, sizeof(SOCKADDR));
+  return   sendto(servSock, buf,len, 0, clientAddr, sizeof(SOCKADDR));
 }
 
-inline LengthType recvStringFrom(char* buf, int len, SOCKADDR* clientAddr)
+inline LengthType recvStringFrom(char* buf, int maxLen, SOCKADDR* clientAddr)
 {
     LengthType length;
-   return  recvfrom(servSock, buf, len, 0, clientAddr, &length);
+   return  recvfrom(servSock, buf, maxLen, 0, clientAddr, &length);
 }
 
 inline void closeSocket()

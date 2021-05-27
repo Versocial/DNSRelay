@@ -1,7 +1,17 @@
 #ifndef dnsRelayC
 #define dnsRelayC
 #include"dnsRelay.h"
-//
+
+int main() {
+	DNS* dns = createDNS();
+	SOCKADDR* addrRecv;
+
+
+
+
+}
+
+
 #endif // !dnsRelayC
 //
 //#if 1

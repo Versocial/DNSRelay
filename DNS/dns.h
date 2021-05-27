@@ -1,5 +1,7 @@
 #ifndef DNSH
 #define DNSH
+#include "sock.h"
+#include "dnsInfo.h"
 #define maxIpLen 30
 #define maxUrlLen 253
 struct FLAG
@@ -25,13 +27,16 @@ struct HEADER
     unsigned  nscount : 16;       /* number of authority entries *//*授权段中的授权记录数*/
     unsigned  arcount : 16;       /* number of resource entries *//*附加段中的附加记录数*/
 };
+typedef struct HEADER DNShead;
 
 struct DNS
 {
-    struct HEADER head;
-
+    unsigned int bufferLen;
+    unsigned int length;
+    unsigned char* buffer;
 
 };
+typedef struct DNS DNS;
 
 enum QueryType //查询的资源记录类型。
 {
@@ -44,7 +49,7 @@ enum QueryType //查询的资源记录类型。
     MB = 0x07, //指定邮箱域名。
     MG = 0x08, //指定邮件组成员。
     MR = 0x09, //指定邮件重命名域名。
-    NULL = 0x0A, //指定空的资源记录
+    NULLQUERY = 0x0A, //指定空的资源记录
     WKS = 0x0B, //描述已知服务。
     PTR = 0x0C, //如果查询是 IP 地址，则指定计算机名；否则指定指向其它信息的指针。
     HINFO = 0x0D, //指定计算机 CPU 以及操作系统类型。
@@ -61,22 +66,29 @@ enum QueryType //查询的资源记录类型。
 
 enum QueryClass //指定信息的协议组。
 {
-    IN = 0x01, //指定 Internet 类别。
+    INTERNET = 0x01, //指定 Internet 类别。
     CSNET = 0x02, //指定 CSNET 类别。（已过时）
     CHAOS = 0x03, //指定 Chaos 类别。
     HESIOD = 0x04,//指定 MIT Athena Hesiod 类别。
     ANYN = 0xFF //指定任何以前列出的通配符。
 };
 
-int formalizeURL(char url[],char*dest) {
-    char* dotPos = dest; dest++;
-    for (int i = 0; i < maxUrlLen; i++, dest++) {
-        if (url[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
-        else *dest = url[i];
-        if (url[i] == 0)return i + 2;
-    }return 0;
-}
+int formalizeURL(char url[], char* dest);
+
+DNS* createDNS();
 
 
+void addQuery(DNS* dns, const char* queryUrl);
 
+void addAnswer(DNS* dns, const char* answerIp, int len);
+
+inline int sendDNS(DNS* dns,SOCKADDR* dest);
+
+inline int recvDNS(DNS* dns, SOCKADDR* source);
+
+DNShead getHead(DNS* dns);
+
+void clearDNS(DNS* dns);
+
+void setHead(DNS* dns, DNShead head);
 #endif // !DNSH

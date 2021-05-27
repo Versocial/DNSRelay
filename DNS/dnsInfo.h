@@ -7,13 +7,13 @@
 #define maxIpLen 30
 #define maxUrlLen 253
 
-struct dnsInfo {
+typedef struct  {
 	char ip[maxIpLen+1];
 	char url[maxUrlLen+1];
 	time_t endTime;
 	struct dnsInfo* next;
-};
-static struct  dnsInfo* theInfo[256];//hash link
+} dnsInfo;
+static  dnsInfo* theInfo[256];//hash link
 
 int initFile(const char* path);
 
