@@ -5,9 +5,10 @@
 //#define LINUX
 
 #ifdef WINDOWS
+#include <winsock2.h>
 #pragma comment (lib, "ws2_32.lib")	//加载 ws2_32.dll
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
-#include <winsock2.h>
+#pragma warning(disable:4996) 
 #endif
 
 #ifdef LINUX
@@ -15,9 +16,9 @@
 #endif // LINUX
 
 //sock.c
-void initSock();
-struct sockaddr_in createSockAddr(const char* str);
-int recvStringFrom(char* buf, int len, SOCKADDR* clientAddr);
-int sendStringTo(char* buf, int len, SOCKADDR* clientAddr);
-
+void initSock(const char* ip);
+int recvInfoFrom(char* buf, int len, SOCKADDR* clientAddr);
+int sendInfoTo(char* buf, int len, SOCKADDR* clientAddr);
+void closeSocket();
+SOCKADDR createSockAddr(const char* ip);
 #endif // !SOCKH

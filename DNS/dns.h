@@ -2,93 +2,125 @@
 #define DNSH
 #include "sock.h"
 #include "dnsInfo.h"
+#include <stdint.h>
 #define maxIpLen 30
 #define maxUrlLen 253
-struct FLAG
+
+#pragma pack(1)
+struct FLAG  //order matters
 {
-    unsigned qr : 1;     /* response flag */ /* query = 0;response=1*/
-    unsigned opcode : 4; /* purpose of message *//*0 è¡¨ç¤ºæ ‡å‡†æŸ¥è¯¢ï¼›1 è¡¨ç¤ºåå‘æŸ¥è¯¢ï¼›2 è¡¨ç¤ºæœåŠ¡å™¨çŠ¶æ€è¯·æ±‚*/
-    unsigned aa : 1;     /* authoritive answer *//*æˆæƒå›ç­”*/
-    unsigned tc : 1;     /* truncated message *//*è¿‡é•¿æˆªæ–­*/
-    unsigned rd : 1;     /* recursion desired *//*queryè¯·æ±‚é€’å½’*/
-    unsigned ra : 1;     /* recursion available *//*responseå…è®¸é€’å½’*/
-    unsigned z : 1;      /* unused bits, must be ZERO *//*0*/
-    unsigned cd : 1;     /* checking disabled by resolver *//*0*/
-    unsigned ad : 1;     /* authentic data from named *//*0*/
-    unsigned rcode : 4;  /* response code *//*å€¼0æ²¡æœ‰é”™è¯¯ã€1æ ¼å¼é”™è¯¯ã€2æœåŠ¡å™¨é”™è¯¯ã€3åå­—é”™è¯¯ã€4æœåŠ¡å™¨ä¸æ”¯æŒã€5æ‹’ç»*/
+	uint16_t rd : 1;     /* recursion desired *//*queryÇëÇóµİ¹é*/
+	uint16_t tc : 1;     /* truncated message *//*¹ı³¤½Ø¶Ï*/
+	uint16_t aa : 1;     /* authoritive answer *//*ÊÚÈ¨»Ø´ğ*/
+	uint16_t opcode : 4; /* purpose of message *//*0 ±íÊ¾±ê×¼²éÑ¯£»1 ±íÊ¾·´Ïò²éÑ¯£»2 ±íÊ¾·şÎñÆ÷×´Ì¬ÇëÇó*/
+	uint16_t qr : 1;     /* response flag */ /* query = 0;response=1*/
+
+	uint16_t rcode : 4;  /* response code *//*Öµ0Ã»ÓĞ´íÎó¡¢1¸ñÊ½´íÎó¡¢2·şÎñÆ÷´íÎó¡¢3Ãû×Ö´íÎó¡¢4·şÎñÆ÷²»Ö§³Ö¡¢5¾Ü¾ø*/
+	uint16_t cd : 1;     /* checking disabled by resolver *//*0*/
+	uint16_t ad : 1;     /* authentic data from named *//*0*/
+	uint16_t z : 1;      /* unused bits, must be ZERO *//*0*/
+	uint16_t ra : 1;     /* recursion available *//*responseÔÊĞíµİ¹é*/
 };
 
-struct HEADER 
+typedef  struct
 {
-    unsigned id : 16;    /* query identification number *//*é—®ç­”id*/
-    struct FLAG flag;   /* flag of 16 bits *//*æ ‡å¿—ä½*/
-    unsigned  qdcount : 16;       /* number of question entries *//*queryé—®é¢˜æ•°*/
-    unsigned  ancount : 16;       /* number of answer entries *//*answerå›ç­”æ•°*/
-    unsigned  nscount : 16;       /* number of authority entries *//*æˆæƒæ®µä¸­çš„æˆæƒè®°å½•æ•°*/
-    unsigned  arcount : 16;       /* number of resource entries *//*é™„åŠ æ®µä¸­çš„é™„åŠ è®°å½•æ•°*/
-};
-typedef struct HEADER DNShead;
+	uint16_t id : 16;    /* query identification number *//*ÎÊ´ğid*/
+	struct FLAG flag;   /* flag of 16 bits *//*±êÖ¾Î»*/
+	uint16_t  qdcount : 16;       /* number of question entries *//*queryÎÊÌâÊı*/
+	uint16_t  ancount : 16;       /* number of answer entries *//*answer»Ø´ğÊı*/
+	uint16_t  nscount : 16;       /* number of authority entries *//*ÊÚÈ¨¶ÎÖĞµÄÊÚÈ¨¼ÇÂ¼Êı*/
+	uint16_t  arcount : 16;       /* number of resource entries *//*¸½¼Ó¶ÎÖĞµÄ¸½¼Ó¼ÇÂ¼Êı*/
+} DNShead;
 
-struct DNS
-{
-    unsigned int bufferLen;
-    unsigned int length;
-    unsigned char* buffer;
-
-};
-typedef struct DNS DNS;
-
-enum QueryType //æŸ¥è¯¢çš„èµ„æºè®°å½•ç±»å‹ã€‚
-{
-    A = 0x01, //æŒ‡å®šè®¡ç®—æœº IP åœ°å€ã€‚
-    NS = 0x02, //æŒ‡å®šç”¨äºå‘½ååŒºåŸŸçš„ DNS åç§°æœåŠ¡å™¨ã€‚
-    MD = 0x03, //æŒ‡å®šé‚®ä»¶æ¥æ”¶ç«™ï¼ˆæ­¤ç±»å‹å·²ç»è¿‡æ—¶äº†ï¼Œä½¿ç”¨MXä»£æ›¿ï¼‰
-    MF = 0x04, //æŒ‡å®šé‚®ä»¶ä¸­è½¬ç«™ï¼ˆæ­¤ç±»å‹å·²ç»è¿‡æ—¶äº†ï¼Œä½¿ç”¨MXä»£æ›¿ï¼‰
-    CNAME = 0x05, //æŒ‡å®šç”¨äºåˆ«åçš„è§„èŒƒåç§°ã€‚
-    SOA = 0x06, //æŒ‡å®šç”¨äº DNS åŒºåŸŸçš„â€œèµ·å§‹æˆæƒæœºæ„â€ã€‚
-    MB = 0x07, //æŒ‡å®šé‚®ç®±åŸŸåã€‚
-    MG = 0x08, //æŒ‡å®šé‚®ä»¶ç»„æˆå‘˜ã€‚
-    MR = 0x09, //æŒ‡å®šé‚®ä»¶é‡å‘½ååŸŸåã€‚
-    NULLQUERY = 0x0A, //æŒ‡å®šç©ºçš„èµ„æºè®°å½•
-    WKS = 0x0B, //æè¿°å·²çŸ¥æœåŠ¡ã€‚
-    PTR = 0x0C, //å¦‚æœæŸ¥è¯¢æ˜¯ IP åœ°å€ï¼Œåˆ™æŒ‡å®šè®¡ç®—æœºåï¼›å¦åˆ™æŒ‡å®šæŒ‡å‘å…¶å®ƒä¿¡æ¯çš„æŒ‡é’ˆã€‚
-    HINFO = 0x0D, //æŒ‡å®šè®¡ç®—æœº CPU ä»¥åŠæ“ä½œç³»ç»Ÿç±»å‹ã€‚
-    MINFO = 0x0E, //æŒ‡å®šé‚®ç®±æˆ–é‚®ä»¶åˆ—è¡¨ä¿¡æ¯ã€‚
-    MX = 0x0F, //æŒ‡å®šé‚®ä»¶äº¤æ¢å™¨ã€‚
-    TXT = 0x10, //æŒ‡å®šæ–‡æœ¬ä¿¡æ¯ã€‚
-    UINFO = 0x64, //æŒ‡å®šç”¨æˆ·ä¿¡æ¯ã€‚
-    UID = 0x65, //æŒ‡å®šç”¨æˆ·æ ‡è¯†ç¬¦ã€‚
-    GID = 0x66, //æŒ‡å®šç»„åçš„ç»„æ ‡è¯†ç¬¦ã€‚
-    ANY = 0xFF //æŒ‡å®šæ‰€æœ‰æ•°æ®ç±»å‹ã€‚
+struct QueryInfo {
+	uint32_t type : 16;
+	uint32_t class :16;
 };
 
-//QClass:é•¿åº¦ä¸º16ä½ï¼Œè¡¨ç¤ºåˆ†ç±»ã€‚
-
-enum QueryClass //æŒ‡å®šä¿¡æ¯çš„åè®®ç»„ã€‚
-{
-    INTERNET = 0x01, //æŒ‡å®š Internet ç±»åˆ«ã€‚
-    CSNET = 0x02, //æŒ‡å®š CSNET ç±»åˆ«ã€‚ï¼ˆå·²è¿‡æ—¶ï¼‰
-    CHAOS = 0x03, //æŒ‡å®š Chaos ç±»åˆ«ã€‚
-    HESIOD = 0x04,//æŒ‡å®š MIT Athena Hesiod ç±»åˆ«ã€‚
-    ANYN = 0xFF //æŒ‡å®šä»»ä½•ä»¥å‰åˆ—å‡ºçš„é€šé…ç¬¦ã€‚
+struct AnswerInfo {
+	unsigned type : 16;
+	unsigned class :16;
+	unsigned int ttl;
+	unsigned short dataLength;
 };
+
+#pragma pack()
+typedef struct
+{
+	unsigned int bufferLen;
+	unsigned int length;
+	unsigned char* buffer;
+
+}DNS;
+
+
+enum QueryType //²éÑ¯µÄ×ÊÔ´¼ÇÂ¼ÀàĞÍ¡£
+{
+	QueryType_A = 0x01, //Ö¸¶¨¼ÆËã»ú IP µØÖ·¡£
+	QueryType_NS = 0x02, //Ö¸¶¨ÓÃÓÚÃüÃûÇøÓòµÄ DNS Ãû³Æ·şÎñÆ÷¡£
+	QueryType_MD = 0x03, //Ö¸¶¨ÓÊ¼ş½ÓÊÕÕ¾£¨´ËÀàĞÍÒÑ¾­¹ıÊ±ÁË£¬Ê¹ÓÃMX´úÌæ£©
+	QueryType_MF = 0x04, //Ö¸¶¨ÓÊ¼şÖĞ×ªÕ¾£¨´ËÀàĞÍÒÑ¾­¹ıÊ±ÁË£¬Ê¹ÓÃMX´úÌæ£©
+	QueryType_CNAME = 0x05, //Ö¸¶¨ÓÃÓÚ±ğÃûµÄ¹æ·¶Ãû³Æ¡£
+	QueryType_SOA = 0x06, //Ö¸¶¨ÓÃÓÚ DNS ÇøÓòµÄ¡°ÆğÊ¼ÊÚÈ¨»ú¹¹¡±¡£
+	QueryType_MB = 0x07, //Ö¸¶¨ÓÊÏäÓòÃû¡£
+	QueryType_MG = 0x08, //Ö¸¶¨ÓÊ¼ş×é³ÉÔ±¡£
+	QueryType_MR = 0x09, //Ö¸¶¨ÓÊ¼şÖØÃüÃûÓòÃû¡£
+	QueryType_NULL = 0x0A, //Ö¸¶¨¿ÕµÄ×ÊÔ´¼ÇÂ¼
+	QueryType_WKS = 0x0B, //ÃèÊöÒÑÖª·şÎñ¡£
+	QueryType_PTR = 0x0C, //Èç¹û²éÑ¯ÊÇ IP µØÖ·£¬ÔòÖ¸¶¨¼ÆËã»úÃû£»·ñÔòÖ¸¶¨Ö¸ÏòÆäËüĞÅÏ¢µÄÖ¸Õë¡£
+	QueryType_HINFO = 0x0D, //Ö¸¶¨¼ÆËã»ú CPU ÒÔ¼°²Ù×÷ÏµÍ³ÀàĞÍ¡£
+	QueryType_MINFO = 0x0E, //Ö¸¶¨ÓÊÏä»òÓÊ¼şÁĞ±íĞÅÏ¢¡£
+	QueryType_MX = 0x0F, //Ö¸¶¨ÓÊ¼ş½»»»Æ÷¡£
+	QueryType_TXT = 0x10, //Ö¸¶¨ÎÄ±¾ĞÅÏ¢¡£
+	QueryType_UINFO = 0x64, //Ö¸¶¨ÓÃ»§ĞÅÏ¢¡£
+	QueryType_UID = 0x65, //Ö¸¶¨ÓÃ»§±êÊ¶·û¡£
+	QueryType_GID = 0x66, //Ö¸¶¨×éÃûµÄ×é±êÊ¶·û¡£
+	QueryType_ANY = 0xFF //Ö¸¶¨ËùÓĞÊı¾İÀàĞÍ¡£
+};
+
+
+//QClass:³¤¶ÈÎª16Î»£¬±íÊ¾·ÖÀà¡£
+
+
+enum QueryClass //Ö¸¶¨ĞÅÏ¢µÄĞ­Òé×é¡£
+{
+	QueryClass_IN = 0x01, //Ö¸¶¨ Internet Àà±ğ¡£
+	QueryClass_ICSNET = 0x02, //Ö¸¶¨ CSNET Àà±ğ¡££¨ÒÑ¹ıÊ±£©
+	QueryClass_ICHAOS = 0x03, //Ö¸¶¨ Chaos Àà±ğ¡£
+	QueryClass_IHESIOD = 0x04,//Ö¸¶¨ MIT Athena Hesiod Àà±ğ¡£
+	QueryClass_IANY = 0xFF //Ö¸¶¨ÈÎºÎÒÔÇ°ÁĞ³öµÄÍ¨Åä·û¡£
+};
+
+
+
 
 int formalizeURL(char url[], char* dest);
 
 DNS* createDNS();
 
+void disposeDNS(DNS* dns);
 
 void addQuery(DNS* dns, const char* queryUrl);
 
-void addAnswer(DNS* dns, const char* answerIp, int len);
+void addAnswer(DNS* dns, const dnsInfo* info);
 
-inline int sendDNS(DNS* dns,SOCKADDR* dest);
+int sendDNS(DNS* dns, SOCKADDR* dest);
 
-inline int recvDNS(DNS* dns, SOCKADDR* source);
+int recvDNS(DNS* dns, SOCKADDR* source);
 
 DNShead getHead(DNS* dns);
 
 void clearDNS(DNS* dns);
 
 void setHead(DNS* dns, DNShead head);
+
+void printDNS(DNS* dns, int len);
 #endif // !DNSH
+
+
+
+
+
+
+
+

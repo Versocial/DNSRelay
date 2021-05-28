@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="dns.c" />
     <ClCompile Include="dnsInfo.c" />
-    <ClCompile Include="dnsRelay.c" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="log.c" />
     <ClCompile Include="sock.c" />
     <ClCompile Include="test1.c" />
