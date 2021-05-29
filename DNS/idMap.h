@@ -20,7 +20,9 @@ typedef struct IdTable {
 
 idTable* createIdTable(uint16_t minId) {
 	idTable*table= (idTable*)calloc(1, sizeof(idTable));
+	if (table == NULL) { log("createIdTable calloc error."); return NULL; };
 	table->minID = minId;
+	return table;
 }
 
 void disposeIdTable(idTable* table) {
@@ -51,7 +53,10 @@ uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr,time_t 
 			}
 		}
 		table->minDeadTime = minDeadT;//*
-		if(table->used == TableSize &&table->next != NULL)table = table->next;
+		if (table->used == TableSize) {
+			if (table->next != NULL)table = table->next;
+			else break;
+		}
 	} 
 	if (table->used == TableSize) {
 		table->next = createIdTable(table->minDeadTime+TableSize);
@@ -62,6 +67,7 @@ uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr,time_t 
 		num--;
 		while (num >= 0) {
 			if (table->info[num].deadTime == 0)break;
+			num--;
 		}
 	}
 	
@@ -69,7 +75,7 @@ uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr,time_t 
 	table->info[num].deadTime = t + lifeTime;
 	table->info[num].addr = *addr;
 	table->used++;
-	if (t + lifeTime < table->minDeadTime)table->minDeadTime = t + lifeTime;
+	if (t + lifeTime < table->minDeadTime||table->used==1)table->minDeadTime = t + lifeTime;
 
 	return num + (table->minID);
 }
@@ -80,9 +86,10 @@ idInfo pollOut(idTable*table,uint16_t id) {
 	while (table!=NULL&&(table->minID<minNum || table->minID>id)) table = table->next;
 	if (table == NULL) { ans.deadTime=0; return ans; }
 	ans= table->info[id - table->minID];
-	table->info[id - table->minID].deadTime = 0;
-	table->used--;
-	
+	if (1) {
+		table->info[id - table->minID].deadTime = 0;
+		table->used--;
+	}
 	return ans;
 }
 

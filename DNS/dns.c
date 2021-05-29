@@ -57,12 +57,15 @@ void addAnswer(DNS* dns,const dnsInfo* info)
 
 int sendDNS(DNS* dns, SOCKADDR* dest)
 {
-   return  sendInfoTo(dns->buffer, dns->length, dest); 
+  int flag= sendInfoTo(dns->buffer, dns->length, dest); 
+  if (flag == -1)log("sendDNS error: dns id %d",((DNShead*)dns->buffer)->id);
 }
 
 int recvDNS(DNS* dns, SOCKADDR* source)
 {
-    return recvInfoFrom(dns->buffer,dns->bufferLen,source);
+    int len= recvInfoFrom(dns->buffer,dns->bufferLen,source);
+    dns->length = len == -1 ? 0 : len;
+    return len;
 }
 
  DNShead getHead(DNS* dns)

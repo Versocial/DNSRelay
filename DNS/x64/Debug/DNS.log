@@ -1,5 +1,4 @@
 ﻿  main.c
 A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\idMap.h(57,59): warning C4244: “函数”: 从“time_t”转换到“uint16_t”，可能丢失数据
-A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\idMap.h(24): warning C4716: “createIdTable”: 必须返回一个值
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\idMap.h(62,59): warning C4244: “函数”: 从“time_t”转换到“uint16_t”，可能丢失数据
   DNS.vcxproj -> A:\Programer\音乐\Albert_C\VS-C\DNS\x64\Debug\DNS.exe

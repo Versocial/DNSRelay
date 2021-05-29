@@ -6,8 +6,8 @@
 //
 //int main() {
 //
-//	initSock(NULL);
-//	SOCKADDR dest = createSockAddr("10.3.9.45");
+//	initSock(NULL,53);
+//	SOCKADDR dest = createSockAddr("10.3.9.45",53);
 //	DNS* dns = createDNS();
 //	DNShead head;
 //	memset(&head, 0, sizeof(head));
@@ -21,7 +21,7 @@
 //	setHead(dns, head);
 //	printDNS(dns, dns->length);
 //	sendDNS(dns, &dest);
-//	SOCKADDR dest2 = createSockAddr("10.3.9.45");
+//	SOCKADDR dest2 = createSockAddr("10.3.9.45",53);
 //	int len=recvDNS(dns, &dest2);
 //	printf("\n%d\n", len);
 //	printDNS(dns, len);

@@ -1,6 +1,7 @@
 #ifndef DNSH
 #define DNSH
 #include "sock.h"
+#include"log.h"
 #include "dnsInfo.h"
 #include <stdint.h>
 #define maxIpLen 30
@@ -48,7 +49,7 @@ struct AnswerInfo {
 typedef struct
 {
 	unsigned int bufferLen;
-	unsigned int length;
+	 int length;
 	unsigned char* buffer;
 
 }DNS;
@@ -119,6 +120,8 @@ void printDNS(DNS* dns, int len);
 void justChangeId(DNS* dns, unsigned short id);
 
 #endif // !DNSH
+
+
 
 
 
