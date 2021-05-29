@@ -5,7 +5,7 @@
 #include "sock.h"
 #include "dns.h"
 #include "dnsInfo.h"
-  
+#include "idMap.h"
 
 
 

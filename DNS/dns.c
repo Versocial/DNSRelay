@@ -8,7 +8,7 @@ int formalizeURL(char url[], char* dest) {
     for (int i = 0; i < maxUrlLen; i++, dest++) {
         if (url[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
         else *dest = url[i];
-        if (url[i] == 0)return i + 2;
+        if (url[i] == 0) { *dotPos = dest - dotPos - 1; return i + 2; }
     }return 0;
 }
 

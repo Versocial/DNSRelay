@@ -12,9 +12,10 @@ static SOCKET servSock;
 static int servSock;
 #endif // LINUX
 static struct sockaddr_in servAddr;
-#define DEFAULTPORT 1234
+#define DEFAULTPORT 53
+#define DEFAULTLOCALPORT 1234
 
-void initSock(const char* ip) 
+void initSock(const char* ip,u_short port) 
 {
 #ifdef WINDOWS
     WSADATA originWsaData;
@@ -26,7 +27,7 @@ void initSock(const char* ip)
     memset(&servAddr, 0, sizeof(servAddr));  //每个字节都用0填充
     servAddr.sin_family = PF_INET;  //使用IPv4地址
     servAddr.sin_addr.s_addr = ip==NULL?htonl(INADDR_ANY): inet_addr(ip); //htonl(INADDR_ANY); //自动获取IP地址
-    servAddr.sin_port = htons(DEFAULTPORT);  //端口
+    servAddr.sin_port = htons(port);  //端口
     //绑定套接字和套接地址
     bind(servSock, (SOCKADDR*)&servAddr, sizeof(SOCKADDR));
 }
@@ -39,7 +40,7 @@ LengthType sendInfoTo(char*buf,int len, SOCKADDR* clientAddr)
 
 LengthType recvInfoFrom(char* buf, int maxLen, SOCKADDR* clientAddr)
 {
-    LengthType length;
+    LengthType length=sizeof(struct sockaddr_in);
    return  recvfrom(servSock, buf, maxLen, 0, clientAddr, &length);
 }
 
@@ -53,13 +54,18 @@ void closeSocket()
 }
 
 //或许仅供测试使用
- SOCKADDR createSockAddr(const char *ip) {
+ SOCKADDR createSockAddr(const char *ip,u_short port) {
     struct sockaddr_in ans;
     memset(&ans, 0, sizeof(ans));  //每个字节都用0填充
     ans.sin_family = PF_INET;  //使用IPv4地址
     ans.sin_addr.s_addr = inet_addr(ip); //自动获取IP地址
-    ans.sin_port = htons(DEFAULTPORT);  //端口
+    ans.sin_port = htons(port);  //端口
     return *((SOCKADDR*)&ans);
 }
+
+
+ int sockAddrEqual(const SOCKADDR* a, const SOCKADDR* b) {
+     return a->sa_family == b->sa_family && a->sa_data == b->sa_data;
+ }
 
 #endif // !SockC

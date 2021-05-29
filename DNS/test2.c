@@ -1,42 +1,35 @@
-//#define _WINSOCK_DEPRECATED_NO_WARNINGS
-//#include <stdio.h>
-//#include <winsock2.h>
-//#pragma comment (lib, "ws2_32.lib")  //加载 ws2_32.dll
+//#ifndef dnsRelayC
+//#define dnsRelayC
+//#include"dnsRelay.h"
+//
+//
 //
 //int main() {
-//    //初始化 DLL
-//    WSADATA wsaData;
-//    WSAStartup(MAKEWORD(2, 2), &wsaData);
 //
-//    //创建套接字
-//    SOCKET servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
+//	initSock(NULL);
+//	SOCKADDR dest = createSockAddr("10.3.9.45");
+//	DNS* dns = createDNS();
+//	DNShead head;
+//	memset(&head, 0, sizeof(head));
+//	head.id = 1001;
+//	head.flag.rd = 1;
+//	char tempUrl[50] = "www.baidu.com";
+//	char tempUrl2[50];
+//	formalizeURL(tempUrl, tempUrl2);
+//	addQuery(dns, tempUrl2);
+//	head.qdcount = 1;
+//	setHead(dns, head);
+//	printDNS(dns, dns->length);
+//	sendDNS(dns, &dest);
+//	SOCKADDR dest2 = createSockAddr("10.3.9.45");
+//	int len=recvDNS(dns, &dest2);
+//	printf("\n%d\n", len);
+//	printDNS(dns, len);
+//	system("pause");
 //
-//    //绑定套接字
-//   struct sockaddr_in sockAddr;
-//    memset(&sockAddr, 0, sizeof(sockAddr));  //每个字节都用0填充
-//    sockAddr.sin_family = PF_INET;  //使用IPv4地址
-//    sockAddr.sin_addr.s_addr = inet_addr("10.21.204.191");  //具体的IP地址
-//    sockAddr.sin_port = htons(1234);  //端口
-//    bind(servSock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
 //
-//    //进入监听状态
-//    listen(servSock, 20);
-//
-//    //接收客户端请求
-//    SOCKADDR clntAddr;
-//    int nSize = sizeof(SOCKADDR);
-//    SOCKET clntSock = accept(servSock, (SOCKADDR*)&clntAddr, &nSize);
-//    printf("cool");
-//    //向客户端发送数据
-//    char* str = "000000000";
-//    send(clntSock, str, strlen(str) + sizeof(char), NULL);
-//
-//    //关闭套接字
-//    closesocket(clntSock);
-//    closesocket(servSock);
-//
-//    //终止 DLL 的使用
-//    WSACleanup();
-//
-//    return 0;
+//	closeSocket();
 //}
+//
+//
+//#endif // !dnsRelayC

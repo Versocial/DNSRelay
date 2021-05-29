@@ -115,7 +115,11 @@ void clearDNS(DNS* dns);
 void setHead(DNS* dns, DNShead head);
 
 void printDNS(DNS* dns, int len);
+
+void justChangeId(DNS* dns, unsigned short id);
+
 #endif // !DNSH
+
 
 
 

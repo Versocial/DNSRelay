@@ -16,9 +16,10 @@
 #endif // LINUX
 
 //sock.c
-void initSock(const char* ip);
+void initSock(const char* ip, u_short port);
 int recvInfoFrom(char* buf, int len, SOCKADDR* clientAddr);
 int sendInfoTo(char* buf, int len, SOCKADDR* clientAddr);
 void closeSocket();
-SOCKADDR createSockAddr(const char* ip);
+SOCKADDR createSockAddr(const char* ip, u_short port);
+int sockAddrEqual(const SOCKADDR* a,const SOCKADDR* b);
 #endif // !SOCKH
