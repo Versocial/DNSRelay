@@ -8,24 +8,26 @@
 #define maxUrlLen 253
 
 typedef struct DNSINFO {
-	char ip[maxIpLen+1];
+	//char ip[maxIpLen+1];
 	char url[maxUrlLen+1];
 	unsigned dataLen : 16;
 	unsigned ipv4:32;
 	time_t endTime;
 	struct DNSINFO* next;
 } dnsInfo;
+
 static  dnsInfo* theInfo[256];//hash link
 
-int initFile(const char* path);
+int initIPFile(const char* path);
 
-void add(const char* ip, const char* url,time_t ttl);
+void addIP(const unsigned int ipv4, const char* url, time_t ttl);
 
 //void deleteIP(const char* url, const char* ip);
 
 //void deleteURL(const char* url);
 
-char* findIp(const char* url);
+dnsInfo findIP(const char* url);
 
-int save(const char* path);
+int formalizeURL(char url[], char* dest);
+//int save(const char* path);
 #endif // !DNSINFOH

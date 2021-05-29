@@ -65,7 +65,7 @@ void closeSocket()
 
 
  int sockAddrEqual(const SOCKADDR* a, const SOCKADDR* b) {
-     return strcmp(inet_ntoa(((struct sockaddr_in*)a)->sin_addr), inet_ntoa(((struct sockaddr_in*)b)->sin_addr)) == 0;
+     return strcmp(inet_ntoa(((struct sockaddr_in*)a)->sin_addr), inet_ntoa(((struct sockaddr_in*)b)->sin_addr)) == 0 && ((struct sockaddr_in*)a)->sin_port== ((struct sockaddr_in*)b)->sin_port;
  }
 
 #endif // !SockC

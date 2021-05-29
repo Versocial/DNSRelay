@@ -3,14 +3,6 @@
 #include "dns.h"
 #define DNS_Buffer_Size 65536
 
-int formalizeURL(char url[], char* dest) {
-    char* dotPos = dest; dest++;
-    for (int i = 0; i < maxUrlLen; i++, dest++) {
-        if (url[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
-        else *dest = url[i];
-        if (url[i] == 0) { *dotPos = dest - dotPos - 1; return i + 2; }
-    }return 0;
-}
 
 DNS* createDNS()
 {
@@ -110,6 +102,12 @@ int recvDNS(DNS* dns, SOCKADDR* source)
  {
      DNShead* netHead = (DNShead*)dns->buffer;
      netHead->id = htons(id);
+ }
+
+
+ char* getQueryUrl(DNS* dns) {
+     //if(dns->buffer)
+     return dns->buffer + sizeof(DNShead);
  }
 
 #endif //DNSC
