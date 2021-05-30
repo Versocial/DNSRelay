@@ -28,6 +28,6 @@ void addIP(const unsigned int ipv4, const char* url, time_t ttl);
 
 dnsInfo findIP(const char* url);
 
-int formalizeURL(char url[], char* dest);
+int formalizeURL(char dest[], const char* src);
 //int save(const char* path);
 #endif // !DNSINFOH

@@ -3,12 +3,12 @@
 #include <string.h>
 #include "log.h"
 
-int formalizeURL(char url[], char* dest) {
+int formalizeURL(char dest[], const char* src) {
 	char* dotPos = dest; dest++;
 	for (int i = 0; i < maxUrlLen; i++, dest++) {
-		if (url[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
-		else *dest = url[i];
-		if (url[i] == 0) { *dotPos = dest - dotPos - 1; return i + 2; }
+		if (src[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
+		else *dest = src[i];
+		if (src[i] == 0) { *dotPos = dest - dotPos - 1; return i + 2; }
 	}return 0;
 }
 
@@ -21,12 +21,13 @@ int initIPFile(const char* path)
 	char tempIp[maxIpLen + 1];
 	for (;!feof(file);) {
 		struct DNSINFO* now = calloc(1, sizeof(struct DNSINFO));//calloc 自动初始化为0
-		fscanf(file, tempUrl);
-		formalizeURL(now->url, tempUrl);
+		
 		unsigned int a, b, c, d;
 		fscanf(file, "%d.%d.%d.%d",&a,&b,&c,&d);
-		now->ipv4 = a*256*256*256+b*256*256+c*256+d;
-		now->endTime = 0;
+		now->ipv4 = d*256*256*256+c*256*256+b*256+a;//net order
+		fscanf(file, "%s",tempUrl);
+		formalizeURL(now->url, tempUrl);
+		now->endTime = 0;// ttl ==0 ==>local
 		now->next = theInfo[*(now->url)];
 		now->dataLen = 4;
 		theInfo[*(now->url)] = now;
@@ -49,10 +50,10 @@ dnsInfo findIP(const char* url)
 {
 	time_t t = time(NULL); struct DNSINFO* prev = NULL;
 	for (struct DNSINFO* now = theInfo[*url]; now != NULL; prev = now, now = now->next) {
-		if (now->endTime != 0 && now->endTime < t) { 
+		if (now->endTime != 0 && now->endTime < t+3) {//3s 算过期
 			if (prev == NULL) { theInfo[*url] = NULL; }
 			else { prev->next = now->next; }
-			free(now);
+			free(now); now = prev; continue;
 		}
 		if (strncmp(url, now->url, maxUrlLen) == 0)return *now;
 	}

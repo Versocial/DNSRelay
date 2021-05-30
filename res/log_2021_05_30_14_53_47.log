@@ -1,0 +1,202 @@
+
+Start Time : 2021/05/30 14:53:47 
+
+[ 2021/05/30 14:54:00 ]   >>recv id:1 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   info from client.
+
+[ 2021/05/30 14:54:00 ]   change id from 1 to 31 and send to Server
+
+[ 2021/05/30 14:54:00 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:00 ]   Response info from server.
+
+[ 2021/05/30 14:54:00 ]   send back 1 to client IP: 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   >>recv id:2 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   info from client.
+
+[ 2021/05/30 14:54:00 ]   send a local refusing visit : url [zhpgdyniapl] to ip 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   change id from 2 to 31 and send to Server
+
+[ 2021/05/30 14:54:00 ]   >>recv id:3 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   info from client.
+
+[ 2021/05/30 14:54:00 ]   send a local refusing visit : url [zhpgdyniapl] to ip 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   change id from 3 to 30 and send to Server
+
+[ 2021/05/30 14:54:00 ]   >>recv id:4 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   info from client.
+
+[ 2021/05/30 14:54:00 ]   send a local refusing visit : url [zhpgdyniapl] to ip 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   change id from 4 to 29 and send to Server
+
+[ 2021/05/30 14:54:00 ]   >>recv id:5 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   info from client.
+
+[ 2021/05/30 14:54:00 ]   send a local refusing visit : url [zhpgdyniapl] to ip 127.0.0.1
+
+[ 2021/05/30 14:54:00 ]   change id from 5 to 28 and send to Server
+
+[ 2021/05/30 14:54:11 ]   >>recv id:19596 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:11 ]   info from client.
+
+[ 2021/05/30 14:54:11 ]   change id from 19596 to 27 and send to Server
+
+[ 2021/05/30 14:54:11 ]   >>recv id:27 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:11 ]   Response info from server.
+
+[ 2021/05/30 14:54:11 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:11 ]   >>recv id:19596 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:11 ]   info from client.
+
+[ 2021/05/30 14:54:11 ]   change id from 19596 to 26 and send to Server
+
+[ 2021/05/30 14:54:11 ]   >>recv id:26 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:11 ]   Response info from server.
+
+[ 2021/05/30 14:54:11 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:12 ]   >>recv id:19596 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:12 ]   info from client.
+
+[ 2021/05/30 14:54:12 ]   change id from 19596 to 25 and send to Server
+
+[ 2021/05/30 14:54:12 ]   >>recv id:25 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:12 ]   Response info from server.
+
+[ 2021/05/30 14:54:12 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:14 ]   >>recv id:19596 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:14 ]   info from client.
+
+[ 2021/05/30 14:54:14 ]   change id from 19596 to 24 and send to Server
+
+[ 2021/05/30 14:54:14 ]   >>recv id:24 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:14 ]   Response info from server.
+
+[ 2021/05/30 14:54:14 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:18 ]   >>recv id:19596 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:18 ]   info from client.
+
+[ 2021/05/30 14:54:18 ]   change id from 19596 to 23 and send to Server
+
+[ 2021/05/30 14:54:18 ]   >>recv id:23 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:18 ]   Response info from server.
+
+[ 2021/05/30 14:54:18 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:22 ]   >>recv id:62053 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:22 ]   info from client.
+
+[ 2021/05/30 14:54:22 ]   change id from 62053 to 22 and send to Server
+
+[ 2021/05/30 14:54:22 ]   >>recv id:36006 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:22 ]   info from client.
+
+[ 2021/05/30 14:54:22 ]   change id from 36006 to 21 and send to Server
+
+[ 2021/05/30 14:54:22 ]   >>recv id:22 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:22 ]   Response info from server.
+
+[ 2021/05/30 14:54:22 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:22 ]   >>recv id:21 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:22 ]   Response info from server.
+
+[ 2021/05/30 14:54:22 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:23 ]   >>recv id:62053 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:23 ]   info from client.
+
+[ 2021/05/30 14:54:23 ]   change id from 62053 to 20 and send to Server
+
+[ 2021/05/30 14:54:23 ]   >>recv id:36006 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:23 ]   info from client.
+
+[ 2021/05/30 14:54:23 ]   change id from 36006 to 19 and send to Server
+
+[ 2021/05/30 14:54:23 ]   >>recv id:20 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:23 ]   Response info from server.
+
+[ 2021/05/30 14:54:23 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:23 ]   >>recv id:19 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:23 ]   Response info from server.
+
+[ 2021/05/30 14:54:23 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:24 ]   >>recv id:36006 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:24 ]   info from client.
+
+[ 2021/05/30 14:54:24 ]   change id from 36006 to 18 and send to Server
+
+[ 2021/05/30 14:54:24 ]   >>recv id:62053 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:24 ]   info from client.
+
+[ 2021/05/30 14:54:24 ]   change id from 62053 to 17 and send to Server
+
+[ 2021/05/30 14:54:24 ]   >>recv id:18 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:24 ]   Response info from server.
+
+[ 2021/05/30 14:54:24 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:24 ]   >>recv id:17 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:24 ]   Response info from server.
+
+[ 2021/05/30 14:54:24 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:26 ]   >>recv id:36006 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:26 ]   info from client.
+
+[ 2021/05/30 14:54:26 ]   change id from 36006 to 16 and send to Server
+
+[ 2021/05/30 14:54:26 ]   >>recv id:62053 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 14:54:26 ]   info from client.
+
+[ 2021/05/30 14:54:26 ]   change id from 62053 to 15 and send to Server
+
+[ 2021/05/30 14:54:26 ]   >>recv id:16 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:26 ]   Response info from server.
+
+[ 2021/05/30 14:54:26 ]   find nothing match this id.
+
+[ 2021/05/30 14:54:26 ]   >>recv id:15 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 14:54:26 ]   Response info from server.
+
+[ 2021/05/30 14:54:26 ]   find nothing match this id.

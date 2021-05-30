@@ -1,0 +1,892 @@
+
+Start Time : 2021/05/30 13:05:36 
+
+[ 2021/05/30 13:05:38 ]   >>recv id:16752 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:38 ]   info from client.
+
+[ 2021/05/30 13:05:38 ]   change id from 16752 to 31 and send to Server
+
+[ 2021/05/30 13:05:38 ]   >>recv id:16752 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:38 ]   info from client.
+
+[ 2021/05/30 13:05:38 ]   change id from 16752 to 30 and send to Server
+
+[ 2021/05/30 13:05:38 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:05:38 ]   Response info from server.
+
+[ 2021/05/30 13:05:38 ]   send back 16752 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:05:38 ]   >>recv id:30 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:05:38 ]   Response info from server.
+
+[ 2021/05/30 13:05:45 ]   >>recv id:1 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:45 ]   info from client.
+
+[ 2021/05/30 13:05:45 ]   change id from 1 to 31 and send to Server
+
+[ 2021/05/30 13:05:45 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:05:45 ]   Response info from server.
+
+[ 2021/05/30 13:05:45 ]   send back 1 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:05:45 ]   >>recv id:2 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:45 ]   info from client.
+
+[ 2021/05/30 13:05:45 ]   send a local info : ip test0cn
+
+[ 2021/05/30 13:05:47 ]   >>recv id:3 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:47 ]   info from client.
+
+[ 2021/05/30 13:05:47 ]   send a local info : ip test0cn
+
+[ 2021/05/30 13:05:49 ]   >>recv id:4 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:49 ]   info from client.
+
+[ 2021/05/30 13:05:49 ]   send a local info : ip test0cn
+
+[ 2021/05/30 13:05:49 ]   >>recv id:33978 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:49 ]   info from client.
+
+[ 2021/05/30 13:05:49 ]   change id from 33978 to 31 and send to Server
+
+[ 2021/05/30 13:05:49 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:05:49 ]   Response info from server.
+
+[ 2021/05/30 13:05:49 ]   send back 33978 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:05:51 ]   >>recv id:5 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:51 ]   info from client.
+
+[ 2021/05/30 13:05:51 ]   send a local info : ip test0cn
+
+[ 2021/05/30 13:05:58 ]   >>recv id:57988 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:05:58 ]   info from client.
+
+[ 2021/05/30 13:05:58 ]   change id from 57988 to 31 and send to Server
+
+[ 2021/05/30 13:05:59 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:05:59 ]   Response info from server.
+
+[ 2021/05/30 13:05:59 ]   send back 57988 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:02 ]   >>recv id:30782 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:02 ]   info from client.
+
+[ 2021/05/30 13:07:02 ]   change id from 30782 to 31 and send to Server
+
+[ 2021/05/30 13:07:02 ]   >>recv id:30782 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:02 ]   info from client.
+
+[ 2021/05/30 13:07:02 ]   change id from 30782 to 29 and send to Server
+
+[ 2021/05/30 13:07:02 ]   >>recv id:29 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:02 ]   Response info from server.
+
+[ 2021/05/30 13:07:02 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:02 ]   Response info from server.
+
+[ 2021/05/30 13:07:02 ]   send back 30782 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:03 ]   >>recv id:9224 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:03 ]   info from client.
+
+[ 2021/05/30 13:07:03 ]   change id from 9224 to 31 and send to Server
+
+[ 2021/05/30 13:07:03 ]   >>recv id:27300 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:03 ]   info from client.
+
+[ 2021/05/30 13:07:03 ]   change id from 27300 to 28 and send to Server
+
+[ 2021/05/30 13:07:03 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:03 ]   Response info from server.
+
+[ 2021/05/30 13:07:03 ]   send back 9224 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:03 ]   >>recv id:27300 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:03 ]   info from client.
+
+[ 2021/05/30 13:07:03 ]   change id from 27300 to 31 and send to Server
+
+[ 2021/05/30 13:07:04 ]   >>recv id:28 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:04 ]   Response info from server.
+
+[ 2021/05/30 13:07:04 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:04 ]   Response info from server.
+
+[ 2021/05/30 13:07:04 ]   send back 27300 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:05 ]   >>recv id:9690 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:05 ]   info from client.
+
+[ 2021/05/30 13:07:05 ]   change id from 9690 to 31 and send to Server
+
+[ 2021/05/30 13:07:05 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:05 ]   Response info from server.
+
+[ 2021/05/30 13:07:05 ]   send back 9690 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:40002 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 40002 to 31 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:4727 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 4727 to 27 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:21210 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 21210 to 26 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:31088 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 31088 to 25 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:46280 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 46280 to 24 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:21202 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 21202 to 23 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:38786 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 38786 to 22 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:65192 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 65192 to 21 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:35624 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 35624 to 20 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:37925 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 37925 to 19 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:9429 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 9429 to 18 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:25173 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 25173 to 17 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:28071 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 28071 to 16 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:24990 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 24990 to 15 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:29750 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 29750 to 14 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:35805 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 35805 to 13 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:24425 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 24425 to 12 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:20471 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 20471 to 11 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:51566 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 51566 to 10 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:54153 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 54153 to 9 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:32129 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 32129 to 8 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:56192 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 56192 to 7 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:6162 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 6162 to 6 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:57389 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 57389 to 5 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:49294 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 49294 to 4 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:50154 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 50154 to 3 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:31191 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 31191 to 2 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:29062 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 29062 to 1 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:2823 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 2823 to 0 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:50833 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 50833 to 32 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:40297 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 40297 to 63 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:53551 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 53551 to 62 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:38786 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 38786 to 61 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:4727 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 4727 to 60 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:21202 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 21202 to 59 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:40002 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 40002 to 58 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:21210 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 21210 to 57 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:31088 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 31088 to 56 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:46280 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 46280 to 55 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:65192 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 65192 to 54 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:35624 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 35624 to 53 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:9429 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 9429 to 52 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:37925 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 37925 to 51 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:29750 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 29750 to 50 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:24990 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 24990 to 49 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:28071 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 28071 to 48 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:25173 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 25173 to 47 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:20471 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 20471 to 46 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:35805 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 35805 to 45 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:24425 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 24425 to 44 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:51566 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 51566 to 43 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:54153 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 54153 to 42 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:6162 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 6162 to 41 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:32129 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 32129 to 40 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:56192 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 56192 to 39 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:57389 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 57389 to 38 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:50154 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 50154 to 37 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:49294 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 49294 to 36 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:2823 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 2823 to 35 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:29062 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 29062 to 34 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:31191 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 31191 to 33 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:50833 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 50833 to 32 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:53551 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 53551 to 63 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:40297 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   info from client.
+
+[ 2021/05/30 13:07:07 ]   change id from 40297 to 62 and send to Server
+
+[ 2021/05/30 13:07:07 ]   >>recv id:22 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:21 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 40002 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:20 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:19 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:11 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:9 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:8 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:5 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:13 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:3 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:2 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:1 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:32 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 50833 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:63 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 40297 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:62 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 53551 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:7 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:61 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 38786 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:58 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 40002 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:54 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 65192 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:55 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 46280 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:53 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 35624 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:51 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 37925 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:49 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 24990 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:46 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 20471 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:45 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 35805 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:42 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 54153 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:40 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 32129 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:39 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 56192 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:38 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 57389 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:37 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 50154 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:25 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:34 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 29062 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:33 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 31191 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:24 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:32 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:63 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:23 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:59 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 21202 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:60 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 4727 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:27 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:62 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:14 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:50 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 29750 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:18 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:16 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:17 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:15 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:57 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 21210 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:26 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:0 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:35 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 2823 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:56 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 31088 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:52 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 9429 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:47 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 25173 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:43 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 51566 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:10 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:12 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:44 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 24425 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:07 ]   >>recv id:4 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   >>recv id:36 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:07 ]   Response info from server.
+
+[ 2021/05/30 13:07:07 ]   send back 49294 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:08 ]   >>recv id:41 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:08 ]   Response info from server.
+
+[ 2021/05/30 13:07:08 ]   send back 6162 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:08 ]   >>recv id:28071 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:08 ]   info from client.
+
+[ 2021/05/30 13:07:08 ]   change id from 28071 to 31 and send to Server
+
+[ 2021/05/30 13:07:08 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:08 ]   Response info from server.
+
+[ 2021/05/30 13:07:08 ]   send back 28071 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:08 ]   >>recv id:48 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:08 ]   Response info from server.
+
+[ 2021/05/30 13:07:08 ]   send back 28071 to client IP: 127.0.0.1
+
+[ 2021/05/30 13:07:10 ]   >>recv id:6 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:10 ]   Response info from server.
+
+[ 2021/05/30 13:07:27 ]   >>recv id:7706 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:27 ]   info from client.
+
+[ 2021/05/30 13:07:27 ]   change id from 7706 to 31 and send to Server
+
+[ 2021/05/30 13:07:27 ]   >>recv id:7706 qr:0 from IP 127.0.0.1
+
+[ 2021/05/30 13:07:27 ]   info from client.
+
+[ 2021/05/30 13:07:27 ]   change id from 7706 to 30 and send to Server
+
+[ 2021/05/30 13:07:27 ]   >>recv id:30 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:27 ]   Response info from server.
+
+[ 2021/05/30 13:07:27 ]   >>recv id:31 qr:1 from IP 10.3.9.44
+
+[ 2021/05/30 13:07:27 ]   Response info from server.
+
+[ 2021/05/30 13:07:27 ]   send back 7706 to client IP: 127.0.0.1

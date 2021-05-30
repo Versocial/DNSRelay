@@ -101,9 +101,9 @@ DNS* createDNS();
 
 void disposeDNS(DNS* dns);
 
-void addQuery(DNS* dns, const char* queryUrl);
+unsigned char addQuery(DNS* dns, const char* queryUrl);
 
-void addAnswer(DNS* dns, const dnsInfo* info);
+unsigned char addAnswer(DNS* dns, const dnsInfo* info, unsigned char urlOffset);
 
 int sendDNS(DNS* dns, SOCKADDR* dest);
 
@@ -120,6 +120,8 @@ void printDNS(DNS* dns, int len);
 void justChangeId(DNS* dns, unsigned short id);
 
 #endif // !DNSH
+
+
 
 
 

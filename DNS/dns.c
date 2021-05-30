@@ -2,7 +2,7 @@
 #define DNSC
 #include "dns.h"
 #define DNS_Buffer_Size 65536
-
+#define DEFALUTTTL 1440
 
 DNS* createDNS()
 {
@@ -22,29 +22,39 @@ void disposeDNS(DNS* dns) {
 }
 
 
-void addQuery(DNS* dns, const char* queryUrl)
+unsigned char addQuery(DNS* dns, const char* queryUrl)
 {
     //memccpy();
+    unsigned char offset = dns->length;
     memcpy(dns->buffer + dns->length, queryUrl, strlen(queryUrl) + 1);
     struct QueryInfo* query = dns->buffer+dns->length+strlen(queryUrl)+1;
     query->type = htons(QueryType_A);
     query->class = htons(QueryClass_IN);
     dns->length += strlen(queryUrl) + 1+sizeof(struct QueryInfo);
-    return;
+    return offset;// return offset of url
 }
 
-void addAnswer(DNS* dns,const dnsInfo* info)
+unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
 {
-   //memcpy();
-    memcpy(dns->buffer + dns->length, info->url, strlen(info->url)+1);
-    struct AnswerInfo* answer = dns->buffer + dns->length + strlen(info->url) + 1;
+    unsigned char offset;
+    if (urlOffset == 0) {//0 means no offset can be use.
+        memcpy(dns->buffer + dns->length, info->url, strlen(info->url) + 1);
+         dns->length +=strlen(info->url) + 1;
+         offset = dns->length;
+    }
+    else {
+        *(dns->buffer + dns->length) = 0xc0; *(dns->buffer + dns->length + 1) = urlOffset;
+        dns->length += 2;
+        offset = urlOffset;
+    }
+    struct AnswerInfo* answer = dns->buffer + dns->length;
     answer->type = htons(QueryType_A);
     answer->class = htons(QueryClass_IN);
-    answer->ttl = htonl(info->endTime-time(NULL));
+    answer->ttl=(info->endTime == 0) ?htonl(DEFALUTTTL): htonl(info->endTime - time(NULL));
     answer->dataLength = htons(info->dataLen);
     *(uint32_t*)((char*)answer + sizeof(struct AnswerInfo) )= info->ipv4; 
-    dns->length += strlen(info->url) + 1+sizeof(struct AnswerInfo)+ info->dataLen;
-    return;
+    dns->length +=sizeof(struct AnswerInfo)+ info->dataLen;
+    return offset;
 }
 
 int sendDNS(DNS* dns, SOCKADDR* dest)
