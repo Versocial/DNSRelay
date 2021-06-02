@@ -125,8 +125,7 @@ int recvDNS(DNS* dns, SOCKADDR* source)
  }
 
 IPLink getAnswerIPv4(DNS* dns) {
-    IPLink link;
-    link.size = 0;
+    IPLink link=newIPlink();
      struct IPNode* start=NULL;
      DNShead head = getHead(dns);
      int queryNum=head.qdcount;
@@ -134,26 +133,21 @@ IPLink getAnswerIPv4(DNS* dns) {
      int offset = sizeof(head);
      for (int i = 0; i < queryNum; i++) {
          if (dns->buffer[offset] == 0xc0)offset += 2;
-         else while (dns->buffer[offset] != 0)offset++;
+         else { while (dns->buffer[offset] != 0)offset++; offset++; }
          offset += sizeof(struct QueryInfo);//
      }
      for (int i = 0; i < answerNum; i++) {
          if (dns->buffer[offset] == 0xc0)offset += 2;
-         else while (dns->buffer[offset] != 0)offset++;
-         int len= ntohs(((struct AnswerInfo*)(dns->buffer + offset))->dataLength) ;
-         time_t t = ntohs(((struct AnswerInfo*)(dns->buffer + offset))->ttl) + time(NULL);
+         else { while (dns->buffer[offset] != 0)offset++; offset++; }
+         struct AnswerInfo* answerInfo = (struct AnswerInfo*)(dns->buffer + offset);
+         int len= ntohs((answerInfo)->dataLength) ;
+         time_t t = ntohs((answerInfo)->ttl) + time(NULL);
          offset += sizeof(struct AnswerInfo);
-         if (len == 4) {
-             struct IPNode* now = calloc(1, sizeof(struct IPNode));
-             now->ipv4 = ntohs(*(uint32_t*)(dns->buffer + offset));
-             now->killTime = t;
-             now->next = start;
-             start = now;
+         if (ntohs(answerInfo->type)==QueryType_A&&len == 4) {
+             addIPNode(&link, (*(uint32_t*)(dns->buffer + offset)), t);
          }
          offset += len;
-         link.size++;
      }
-     link.node = start;
      return link;
  }
 

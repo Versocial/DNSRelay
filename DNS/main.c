@@ -28,6 +28,7 @@ int main() {
 				log("Response info from server.");
 				idInfo info = pollOut(idMap, head.id);
 				if (info.deadTime != 0) {
+					//printDNS(dns, dns->length);
 					justChangeId(dns, info.id);
 					sendDNS(dns, &info.addr);
 					addIP(getAnswerIPv4(dns), getQueryUrl(dns));
@@ -41,8 +42,11 @@ int main() {
 		}
 		else {//query
 			log("info from client.");
-			dnsInfo info = findIP(getQueryUrl(dns),10);// at least 10
-			if (info.ipSet.size == 1 && isLocal(info.ipSet)) {//fliter--local
+			char *url=getQueryUrl(dns);
+			log("url");
+			dnsInfo info = findIP(url,10);// at least 10
+			log("find");
+			if (info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//fliter--local
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head)); 
 				addQuery(dns, info.url);
@@ -68,7 +72,7 @@ int main() {
 				head.qdcount = 1;
 				head.ancount = info.ipSet.size;
 				setHead(dns, head);
-				log("send a local info : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
+				log("send a local or chache info : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				//printDNS(dns, dns->length);
 				sendDNS(dns, &client);
 			}

@@ -1,6 +1,6 @@
 #ifndef IPH
 #define IPH
-
+#include<stdlib.h>
 #include<time.h>
 
 typedef struct {

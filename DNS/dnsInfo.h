@@ -20,7 +20,7 @@ typedef struct DNSINFO {
 
 static  dnsInfo* theInfo[256];//hash link
 
-dnsInfo* createDndInfo();
+dnsInfo* createDnsInfo();
 
 int initIPFile(const char* path);
 

@@ -12,7 +12,7 @@ int formalizeURL(char dest[], const char* src)
 	}return 0;
 }
 
-dnsInfo* createDndInfo()
+dnsInfo* createDnsInfo()
 {
 	struct DNSINFO* now = calloc(1, sizeof(struct DNSINFO));//calloc 自动初始化为0
 	now->ipSet = newIPlink();
@@ -28,7 +28,7 @@ int initIPFile(const char* path)
 	for (;!feof(file);) {
 		unsigned int a, b, c, d;
 		fscanf(file, "%d.%d.%d.%d",&a,&b,&c,&d);
-		dnsInfo* now = createDndInfo();
+		dnsInfo* now = createDnsInfo();
 		addIPNode( &(now->ipSet), d*256*256*256+c*256*256+b*256+a,0);//net order
 		fscanf(file, "%s",tempUrl);
 		formalizeURL(now->url, tempUrl);
@@ -53,22 +53,28 @@ void addIP(IPLink ip, const char* url)
 
 dnsInfo findIP(const char* url,time_t lowestLeft)
 {
-	time_t t = time(NULL); struct DNSINFO* prev = NULL;
+	 struct DNSINFO* prev = NULL;
 	for (struct DNSINFO* now = theInfo[*url]; now != NULL; prev = now, now = now->next) {
 		if (strncmp(url, now->url, maxUrlLen) == 0) {
+			log("%s@1", now->url);
 			refresh(&(now->ipSet),lowestLeft);
+			log("%s@2", now->url);
 			if (now->ipSet.size > 0) {
 				if (prev != NULL) {
 					prev->next = now->next;
 					now->next = theInfo[*url];
 					theInfo[*url] = now;
 				}
+				log("%s@3", now->url);
 				return *now;
 			}
 			else {
+				log("%s@4", now->url);
 				if (prev == NULL)theInfo[*url] = now->next;
 				else { prev->next=now->next; }
+				log("%s@5", now->url);
 				free(now);
+				log("%s@6", now->url);
 			}
 			break;
 		}
