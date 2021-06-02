@@ -42,6 +42,9 @@
     <ClCompile Include="idMap.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="IPLink.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="log.h">
@@ -60,6 +63,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="idMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IP.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -30,6 +30,7 @@ int main() {
 				if (info.deadTime != 0) {
 					justChangeId(dns, info.id);
 					sendDNS(dns, &info.addr);
+					addIP(getAnswerIPv4(dns), getQueryUrl(dns));
 					log("send back %d to client IP: %s", info.id, inet_ntoa(((struct sockaddr_in*)&info.addr)->sin_addr));
 				}
 				else log("find nothing match this id.");
@@ -40,8 +41,8 @@ int main() {
 		}
 		else {//query
 			log("info from client.");
-			dnsInfo info = findIP(getQueryUrl(dns));
-			if (info.dataLen != 0 && info.ipv4 == 0) {
+			dnsInfo info = findIP(getQueryUrl(dns),10);// at least 10
+			if (info.ipSet.size == 1 && isLocal(info.ipSet)) {//fliter--local
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head)); 
 				addQuery(dns, info.url);
@@ -55,7 +56,7 @@ int main() {
 				log("send a local refusing visit : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				sendDNS(dns, &client);
 			}
-			if (info.dataLen!=0&&info.ipv4!=0) {//find the domain
+			else if (info.ipSet.size>0) {//find the domain-not-local
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head));
 				unsigned char offset= addQuery(dns, info.url);
@@ -65,7 +66,7 @@ int main() {
 				head.flag.rd = 1;
 				head.flag.ra = 1;
 				head.qdcount = 1;
-				head.ancount = 1;
+				head.ancount = info.ipSet.size;
 				setHead(dns, head);
 				log("send a local info : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				//printDNS(dns, dns->length);

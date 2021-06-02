@@ -2,7 +2,7 @@
 #define DNSC
 #include "dns.h"
 #define DNS_Buffer_Size 65536
-#define DEFALUTTTL 1440
+#define DEFALUTTTL 7200
 
 DNS* createDNS()
 {
@@ -36,24 +36,27 @@ unsigned char addQuery(DNS* dns, const char* queryUrl)
 
 unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
 {
-    unsigned char offset;
-    if (urlOffset == 0) {//0 means no offset can be use.
-        memcpy(dns->buffer + dns->length, info->url, strlen(info->url) + 1);
-         dns->length +=strlen(info->url) + 1;
-         offset = dns->length;
-    }
-    else {
-        *(dns->buffer + dns->length) = 0xc0; *(dns->buffer + dns->length + 1) = urlOffset;
-        dns->length += 2;
-        offset = urlOffset;
-    }
-    struct AnswerInfo* answer = dns->buffer + dns->length;
-    answer->type = htons(QueryType_A);
-    answer->class = htons(QueryClass_IN);
-    answer->ttl=(info->endTime == 0) ?htonl(DEFALUTTTL): htonl(info->endTime - time(NULL));
-    answer->dataLength = htons(info->dataLen);
-    *(uint32_t*)((char*)answer + sizeof(struct AnswerInfo) )= info->ipv4; 
-    dns->length +=sizeof(struct AnswerInfo)+ info->dataLen;
+    unsigned char offset=urlOffset;
+   
+    for (struct IPNode* ip = info->ipSet.node;ip!=NULL;ip=ip->next) {
+        if (urlOffset == 0) {//0 means no offset can be use.
+            memcpy(dns->buffer + dns->length, info->url, strlen(info->url) + 1);
+            dns->length += strlen(info->url) + 1;
+            offset = dns->length;
+        }
+        else {
+            *(dns->buffer + dns->length) = 0xc0; *(dns->buffer + dns->length + 1) = offset;
+            dns->length += 2;
+        }
+
+        struct AnswerInfo* answer =(struct AnswerInfo*) dns->buffer + dns->length;
+        answer->type = htons(QueryType_A);
+        answer->class = htons(QueryClass_IN);
+        answer->ttl = (ip->killTime == 0) ? htonl(DEFALUTTTL) : htonl(ip->killTime - time(NULL));
+        answer->dataLength = htons(4);
+        *(uint32_t*)((char*)answer + sizeof(struct AnswerInfo)) = ip->ipv4;
+        dns->length += sizeof(struct AnswerInfo) + ntohs(answer->dataLength);
+ }
     return offset;
 }
 
@@ -61,6 +64,7 @@ int sendDNS(DNS* dns, SOCKADDR* dest)
 {
   int flag= sendInfoTo(dns->buffer, dns->length, dest); 
   if (flag == -1)log("sendDNS error: dns id %d",((DNShead*)dns->buffer)->id);
+  return flag;
 }
 
 int recvDNS(DNS* dns, SOCKADDR* source)
@@ -119,5 +123,39 @@ int recvDNS(DNS* dns, SOCKADDR* source)
      //if(dns->buffer)
      return dns->buffer + sizeof(DNShead);
  }
+
+IPLink getAnswerIPv4(DNS* dns) {
+    IPLink link;
+    link.size = 0;
+     struct IPNode* start=NULL;
+     DNShead head = getHead(dns);
+     int queryNum=head.qdcount;
+     int answerNum=head.ancount; 
+     int offset = sizeof(head);
+     for (int i = 0; i < queryNum; i++) {
+         if (dns->buffer[offset] == 0xc0)offset += 2;
+         else while (dns->buffer[offset] != 0)offset++;
+         offset += sizeof(struct QueryInfo);//
+     }
+     for (int i = 0; i < answerNum; i++) {
+         if (dns->buffer[offset] == 0xc0)offset += 2;
+         else while (dns->buffer[offset] != 0)offset++;
+         int len= ntohs(((struct AnswerInfo*)(dns->buffer + offset))->dataLength) ;
+         time_t t = ntohs(((struct AnswerInfo*)(dns->buffer + offset))->ttl) + time(NULL);
+         offset += sizeof(struct AnswerInfo);
+         if (len == 4) {
+             struct IPNode* now = calloc(1, sizeof(struct IPNode));
+             now->ipv4 = ntohs(*(uint32_t*)(dns->buffer + offset));
+             now->killTime = t;
+             now->next = start;
+             start = now;
+         }
+         offset += len;
+         link.size++;
+     }
+     link.node = start;
+     return link;
+ }
+
 
 #endif //DNSC

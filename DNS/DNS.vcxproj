@@ -142,6 +142,7 @@
     <ClCompile Include="dns.c" />
     <ClCompile Include="dnsInfo.c" />
     <ClCompile Include="idMap.c" />
+    <ClCompile Include="IPLink.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="log.c" />
     <ClCompile Include="sock.c" />
@@ -154,6 +155,7 @@
     <ClInclude Include="dnsInfo.h" />
     <ClInclude Include="dnsRelay.h" />
     <ClInclude Include="idMap.h" />
+    <ClInclude Include="IP.h" />
     <ClInclude Include="log.h" />
     <ClInclude Include="sock.h" />
   </ItemGroup>

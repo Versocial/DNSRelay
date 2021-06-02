@@ -1,4 +1,21 @@
-﻿  main.c
+﻿  dns.c
 A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\idMap.h(62,59): warning C4244: “函数”: 从“time_t”转换到“uint16_t”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(33,65): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(30,1): warning C4133: “初始化”: 从“unsigned char *”到“QueryInfo *”的类型不兼容
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(44,49): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(55,96): warning C4244: “函数”: 从“time_t”转换到“u_long”，可能丢失数据
+  dnsInfo.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.c(9,51): warning C4244: “=”: 从“__int64”转换到“char”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.c(11,49): warning C4244: “=”: 从“__int64”转换到“char”，可能丢失数据
+  idMap.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\idMap.c(44,61): warning C4244: “函数”: 从“time_t”转换到“uint16_t”，可能丢失数据
+  IPLink.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\IPLink.c(7,29): warning C4013: “calloc”未定义；假设外部返回 int
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\IPLink.c(7,1): warning C4047: “初始化”:“IPNode *”与“int”的间接级别不同
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\IPLink.c(21,52): warning C4013: “free”未定义；假设外部返回 int
+  main.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
   DNS.vcxproj -> A:\Programer\音乐\Albert_C\VS-C\DNS\x64\Debug\DNS.exe

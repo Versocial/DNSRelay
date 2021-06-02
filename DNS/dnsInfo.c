@@ -1,9 +1,9 @@
+#ifndef DNSINFOC
+#define DNSINFOC
 #include "dnsInfo.h"
-#include<time.h>
-#include <string.h>
-#include "log.h"
 
-int formalizeURL(char dest[], const char* src) {
+int formalizeURL(char dest[], const char* src)
+{
 	char* dotPos = dest; dest++;
 	for (int i = 0; i < maxUrlLen; i++, dest++) {
 		if (src[i] == '.') { *dotPos = dest - dotPos - 1; dotPos = dest; }
@@ -12,53 +12,70 @@ int formalizeURL(char dest[], const char* src) {
 	}return 0;
 }
 
+dnsInfo* createDndInfo()
+{
+	struct DNSINFO* now = calloc(1, sizeof(struct DNSINFO));//calloc 自动初始化为0
+	now->ipSet = newIPlink();
+	return now;
+}
+
 int initIPFile(const char* path)
 {
 	memset(theInfo, 0, 256 * sizeof(struct DNSINFO*));
 	FILE *file = fopen(path, "r");
 	if (file == NULL) { log("IPfile init fopen %s error.",path); return -1; }
 	char tempUrl[maxUrlLen + 1];
-	char tempIp[maxIpLen + 1];
 	for (;!feof(file);) {
-		struct DNSINFO* now = calloc(1, sizeof(struct DNSINFO));//calloc 自动初始化为0
-		
 		unsigned int a, b, c, d;
 		fscanf(file, "%d.%d.%d.%d",&a,&b,&c,&d);
-		now->ipv4 = d*256*256*256+c*256*256+b*256+a;//net order
+		dnsInfo* now = createDndInfo();
+		addIPNode( &(now->ipSet), d*256*256*256+c*256*256+b*256+a,0);//net order
 		fscanf(file, "%s",tempUrl);
 		formalizeURL(now->url, tempUrl);
-		now->endTime = 0;// ttl ==0 ==>local
 		now->next = theInfo[*(now->url)];
-		now->dataLen = 4;
 		theInfo[*(now->url)] = now;
 	}
 	fclose(file);
 	return 0;
 }
 
-void addIP(const unsigned int ipv4, const char* url,time_t ttl)
+
+
+
+void addIP(IPLink ip, const char* url)
 {
 	struct DNSINFO* temp = calloc(1,sizeof(struct DNSINFO));//calloc 自动初始化为0
 	temp->next = theInfo[*url];
 	theInfo[*url] = temp;
-	 temp->endTime=time(NULL)+ttl;
-	 temp->ipv4 = ipv4;
+	temp->ipSet = ip;
 	strncpy(temp->url, url, maxUrlLen);
 }
 
-dnsInfo findIP(const char* url)
+dnsInfo findIP(const char* url,time_t lowestLeft)
 {
 	time_t t = time(NULL); struct DNSINFO* prev = NULL;
 	for (struct DNSINFO* now = theInfo[*url]; now != NULL; prev = now, now = now->next) {
-		if (now->endTime != 0 && now->endTime < t+3) {//3s 算过期
-			if (prev == NULL) { theInfo[*url] = NULL; }
-			else { prev->next = now->next; }
-			free(now); now = prev; continue;
+		if (strncmp(url, now->url, maxUrlLen) == 0) {
+			refresh(&(now->ipSet),lowestLeft);
+			if (now->ipSet.size > 0) {
+				if (prev != NULL) {
+					prev->next = now->next;
+					now->next = theInfo[*url];
+					theInfo[*url] = now;
+				}
+				return *now;
+			}
+			else {
+				if (prev == NULL)theInfo[*url] = now->next;
+				else { prev->next=now->next; }
+				free(now);
+			}
+			break;
 		}
-		if (strncmp(url, now->url, maxUrlLen) == 0)return *now;
 	}
 	struct DNSINFO temp;
-	temp.dataLen = 0;
+	memcpy(temp.url, url, strlen(url) + 1);
+	temp.ipSet.size = 0;
 	return temp;
 }
 //
@@ -77,3 +94,5 @@ dnsInfo findIP(const char* url)
 void deleteURL(const char* url)
 {
 }
+
+#endif // !DNSINFOC

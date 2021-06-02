@@ -2,6 +2,7 @@
 #define DNSH
 #include "sock.h"
 #include"log.h"
+#include "IP.h"
 #include "dnsInfo.h"
 #include <stdint.h>
 #define maxIpLen 30
@@ -93,7 +94,7 @@ enum QueryClass //指定信息的协议组。
 };
 
 
-
+IPLink getAnswerIPv4(DNS* dns);
 
 char* getQueryUrl(DNS* dns);
 
@@ -120,6 +121,9 @@ void printDNS(DNS* dns, int len);
 void justChangeId(DNS* dns, unsigned short id);
 
 #endif // !DNSH
+
+
+
 
 
 
