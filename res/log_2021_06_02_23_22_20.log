@@ -1,0 +1,584 @@
+
+Start Time : 2021/06/02 23:22:20 
+
+[ 2021/06/02 23:22:26 ]   >>recv id:1 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]   info from client.
+
+[ 2021/06/02 23:22:26 ]   change id from 1 to 0 and send to Server
+
+[ 2021/06/02 23:22:26 ]   send The 0 ans:0
+
+[ 2021/06/02 23:22:26 ]   >>recv id:0 qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:22:26 ]   Response id 0 info from server url 100127in-addrarpa .
+
+[ 2021/06/02 23:22:26 ]    xxxxxx
+
+[ 2021/06/02 23:22:26 ]   send The 1 ans:0
+
+[ 2021/06/02 23:22:26 ]   find 0 IP
+
+[ 2021/06/02 23:22:26 ]   send back id 1 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]   >>recv id:2 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]   info from client.
+
+[ 2021/06/02 23:22:26 ]   change id from 2 to 0 and send to Server
+
+[ 2021/06/02 23:22:26 ]   send The 0 ans:0
+
+[ 2021/06/02 23:22:26 ]   >>recv id:0 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:22:26 ]   Response id 0 info from server url baiducom .
+
+[ 2021/06/02 23:22:26 ]    xxxxxx
+
+[ 2021/06/02 23:22:26 ]   send The 2 ans:2
+
+[ 2021/06/02 23:22:26 ]   find 2 IP
+
+[ 2021/06/02 23:22:26 ]   send back id 2 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]   >>recv id:3 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]   info from client.
+
+[ 2021/06/02 23:22:26 ]   find url : baiducom
+
+[ 2021/06/02 23:22:26 ]   add 2 answers
+
+[ 2021/06/02 23:22:26 ]   send a local or chache infoid 1 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:22:26 ]    yyyyyyyy
+
+[ 2021/06/02 23:22:26 ]   send The 1 ans:2
+
+[ 2021/06/02 23:22:28 ]   >>recv id:1 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:28 ]   info from client.
+
+[ 2021/06/02 23:22:28 ]   dated url : 100127in-addrarpa
+
+[ 2021/06/02 23:22:28 ]   change id from 1 to 0 and send to Server
+
+[ 2021/06/02 23:22:28 ]   send The 0 ans:0
+
+[ 2021/06/02 23:22:28 ]   >>recv id:0 qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:22:28 ]   Response id 0 info from server url 100127in-addrarpa .
+
+[ 2021/06/02 23:22:28 ]    xxxxxx
+
+[ 2021/06/02 23:22:28 ]   send The 1 ans:0
+
+[ 2021/06/02 23:22:28 ]   find 0 IP
+
+[ 2021/06/02 23:22:28 ]   send back id 1 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:22:28 ]   >>recv id:2 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:28 ]   info from client.
+
+[ 2021/06/02 23:22:28 ]   find url : baiducom
+
+[ 2021/06/02 23:22:28 ]   add 2 answers
+
+[ 2021/06/02 23:22:28 ]   send a local or chache infoid 1 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:22:28 ]    yyyyyyyy
+
+[ 2021/06/02 23:22:28 ]   send The 1 ans:2
+
+[ 2021/06/02 23:22:30 ]   >>recv id:3 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:30 ]   info from client.
+
+[ 2021/06/02 23:22:30 ]   find url : baiducom
+
+[ 2021/06/02 23:22:30 ]   add 2 answers
+
+[ 2021/06/02 23:22:30 ]   send a local or chache infoid 1 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:22:30 ]    yyyyyyyy
+
+[ 2021/06/02 23:22:30 ]   send The 1 ans:2
+
+[ 2021/06/02 23:22:32 ]   >>recv id:4 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:32 ]   info from client.
+
+[ 2021/06/02 23:22:32 ]   find url : baiducom
+
+[ 2021/06/02 23:22:32 ]   add 2 answers
+
+[ 2021/06/02 23:22:32 ]   send a local or chache infoid 2 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:22:32 ]    yyyyyyyy
+
+[ 2021/06/02 23:22:32 ]   send The 2 ans:2
+
+[ 2021/06/02 23:22:33 ]   >>recv id:8545 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:33 ]   info from client.
+
+[ 2021/06/02 23:22:33 ]   change id from 8545 to 0 and send to Server
+
+[ 2021/06/02 23:22:33 ]   send The 0 ans:0
+
+[ 2021/06/02 23:22:33 ]   >>recv id:0 qr:1 ancount:10 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:22:33 ]   Response id 0 info from server url apivcbilibilicom .
+
+[ 2021/06/02 23:22:33 ]    xxxxxx
+
+[ 2021/06/02 23:22:33 ]   send The 8545 ans:10
+
+[ 2021/06/02 23:22:33 ]   find 9 IP
+
+[ 2021/06/02 23:22:33 ]   send back id 8545 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:22:34 ]   >>recv id:5 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:22:34 ]   info from client.
+
+[ 2021/06/02 23:22:34 ]   find url : baiducom
+
+[ 2021/06/02 23:22:34 ]   add 2 answers
+
+[ 2021/06/02 23:22:34 ]   send a local or chache infoid 2 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:22:34 ]    yyyyyyyy
+
+[ 2021/06/02 23:22:34 ]   send The 2 ans:2
+
+[ 2021/06/02 23:23:26 ]   >>recv id:18676 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:23:26 ]   info from client.
+
+[ 2021/06/02 23:23:26 ]   change id from 18676 to 0 and send to Server
+
+[ 2021/06/02 23:23:26 ]   send The 0 ans:0
+
+[ 2021/06/02 23:23:26 ]   >>recv id:0 qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:23:26 ]   Response id 0 info from server url selfeventsdata	microsoftcom .
+
+[ 2021/06/02 23:23:26 ]    xxxxxx
+
+[ 2021/06/02 23:23:26 ]   send The 18676 ans:3
+
+[ 2021/06/02 23:23:26 ]   find 1 IP
+
+[ 2021/06/02 23:23:26 ]   send back id 18676 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:23:33 ]   >>recv id:20794 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:23:33 ]   info from client.
+
+[ 2021/06/02 23:23:33 ]   change id from 20794 to 0 and send to Server
+
+[ 2021/06/02 23:23:33 ]   send The 0 ans:0
+
+[ 2021/06/02 23:23:33 ]   >>recv id:0 qr:1 ancount:4 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:23:33 ]   Response id 0 info from server url ww2	mathworkscn .
+
+[ 2021/06/02 23:23:33 ]    xxxxxx
+
+[ 2021/06/02 23:23:33 ]   send The 20794 ans:4
+
+[ 2021/06/02 23:23:33 ]   find 1 IP
+
+[ 2021/06/02 23:23:33 ]   send back id 20794 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:23:57 ]   >>recv id:19252 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:23:57 ]   info from client.
+
+[ 2021/06/02 23:23:57 ]   change id from 19252 to 0 and send to Server
+
+[ 2021/06/02 23:23:57 ]   send The 0 ans:0
+
+[ 2021/06/02 23:23:57 ]   >>recv id:0 qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:23:57 ]   Response id 0 info from server url boss	cnwangjiecom .
+
+[ 2021/06/02 23:23:57 ]    xxxxxx
+
+[ 2021/06/02 23:23:57 ]   send The 19252 ans:1
+
+[ 2021/06/02 23:23:57 ]   find 1 IP
+
+[ 2021/06/02 23:23:57 ]   send back id 19252 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:23 ]   >>recv id:65199 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 65199 to 0 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 0 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:65199 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 65199 to 1 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 1 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:65199 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 65199 to 2 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 2 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:65199 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 65199 to 3 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 3 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:65199 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 65199 to 4 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 4 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1891 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   find url : boss	cnwangjiecom
+
+[ 2021/06/02 23:24:37 ]   add 1 answers
+
+[ 2021/06/02 23:24:37 ]   send a local or chache infoid 945 : url [boss	cnwangjiecom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:37 ]   send The 945 ans:1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:3107 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 3107 to 5 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 5 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1891 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   find url : boss	cnwangjiecom
+
+[ 2021/06/02 23:24:37 ]   add 1 answers
+
+[ 2021/06/02 23:24:37 ]   send a local or chache infoid 945 : url [boss	cnwangjiecom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:37 ]   send The 945 ans:1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:3107 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 3107 to 6 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 6 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1891 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   find url : boss	cnwangjiecom
+
+[ 2021/06/02 23:24:37 ]   add 1 answers
+
+[ 2021/06/02 23:24:37 ]   send a local or chache infoid 945 : url [boss	cnwangjiecom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:37 ]   send The 945 ans:1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:3107 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 3107 to 7 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 7 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1891 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   find url : boss	cnwangjiecom
+
+[ 2021/06/02 23:24:37 ]   add 1 answers
+
+[ 2021/06/02 23:24:37 ]   send a local or chache infoid 945 : url [boss	cnwangjiecom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:37 ]   send The 945 ans:1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:3107 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   change id from 3107 to 8 and send to Server
+
+[ 2021/06/02 23:24:37 ]   send The 8 ans:0
+
+[ 2021/06/02 23:24:37 ]   >>recv id:0 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 0 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 65199 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 65199 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 1 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 65199 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 65199 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:2 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 2 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 65199 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 65199 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:3 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 3 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 65199 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 65199 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:4 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 4 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 65199 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 65199 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:1891 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   info from client.
+
+[ 2021/06/02 23:24:37 ]   find url : boss	cnwangjiecom
+
+[ 2021/06/02 23:24:37 ]   add 1 answers
+
+[ 2021/06/02 23:24:37 ]   send a local or chache infoid 945 : url [boss	cnwangjiecom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:37 ]   send The 945 ans:1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:5 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 5 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 3107 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 3107 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv id:6 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 6 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 3107 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 3107 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:63343 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv id:7 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 7 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 3107 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 3107 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:63343 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv id:8 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:37 ]   Response id 8 info from server url tracker-publictjuptorg .
+
+[ 2021/06/02 23:24:37 ]    xxxxxx
+
+[ 2021/06/02 23:24:37 ]   send The 3107 ans:2
+
+[ 2021/06/02 23:24:37 ]   find 2 IP
+
+[ 2021/06/02 23:24:37 ]   send back id 3107 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:49741 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:49741 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:49741 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:49741 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:49741 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:63343 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:58728 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:58728 -id 3107
+
+[ 2021/06/02 23:24:37 ]   >>recv -1 from ip: 127.0.0.1 port:58728 -id 3107
+
+[ 2021/06/02 23:24:43 ]   >>recv id:1 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:43 ]   info from client.
+
+[ 2021/06/02 23:24:43 ]   dated url : 100127in-addrarpa
+
+[ 2021/06/02 23:24:43 ]   change id from 1 to 0 and send to Server
+
+[ 2021/06/02 23:24:43 ]   send The 0 ans:0
+
+[ 2021/06/02 23:24:43 ]   >>recv id:0 qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:43 ]   Response id 0 info from server url 100127in-addrarpa .
+
+[ 2021/06/02 23:24:43 ]    xxxxxx
+
+[ 2021/06/02 23:24:43 ]   send The 1 ans:0
+
+[ 2021/06/02 23:24:43 ]   find 0 IP
+
+[ 2021/06/02 23:24:43 ]   send back id 1 to client IP: 127.0.0.1
+
+[ 2021/06/02 23:24:43 ]   >>recv id:2 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:43 ]   info from client.
+
+[ 2021/06/02 23:24:43 ]   find url : baiducom
+
+[ 2021/06/02 23:24:43 ]   add 2 answers
+
+[ 2021/06/02 23:24:43 ]   send a local or chache infoid 1 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:43 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:43 ]   send The 1 ans:2
+
+[ 2021/06/02 23:24:45 ]   >>recv id:3 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:45 ]   info from client.
+
+[ 2021/06/02 23:24:45 ]   find url : baiducom
+
+[ 2021/06/02 23:24:45 ]   add 2 answers
+
+[ 2021/06/02 23:24:45 ]   send a local or chache infoid 1 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:45 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:45 ]   send The 1 ans:2
+
+[ 2021/06/02 23:24:47 ]   >>recv id:4 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:47 ]   info from client.
+
+[ 2021/06/02 23:24:47 ]   find url : baiducom
+
+[ 2021/06/02 23:24:47 ]   add 2 answers
+
+[ 2021/06/02 23:24:47 ]   send a local or chache infoid 2 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:47 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:47 ]   send The 2 ans:2
+
+[ 2021/06/02 23:24:49 ]   >>recv id:5 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:49 ]   info from client.
+
+[ 2021/06/02 23:24:49 ]   find url : baiducom
+
+[ 2021/06/02 23:24:49 ]   add 2 answers
+
+[ 2021/06/02 23:24:49 ]   send a local or chache infoid 2 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 23:24:49 ]    yyyyyyyy
+
+[ 2021/06/02 23:24:49 ]   send The 2 ans:2
+
+[ 2021/06/02 23:24:52 ]   >>recv id:52616 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 23:24:52 ]   info from client.
+
+[ 2021/06/02 23:24:52 ]   change id from 52616 to 0 and send to Server
+
+[ 2021/06/02 23:24:52 ]   send The 0 ans:0
+
+[ 2021/06/02 23:24:52 ]   >>recv id:0 qr:1 ancount:4 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 23:24:52 ]   Response id 0 info from server url az700632vomsecndnet .
+
+[ 2021/06/02 23:24:52 ]    xxxxxx
+
+[ 2021/06/02 23:24:52 ]   send The 52616 ans:4
+
+[ 2021/06/02 23:24:52 ]   find 1 IP
+
+[ 2021/06/02 23:24:52 ]   send back id 52616 to client IP: 127.0.0.1

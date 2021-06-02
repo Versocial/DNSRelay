@@ -1,3 +1,14 @@
-﻿  main.c
+﻿  dns.c
 A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(33,65): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(30,1): warning C4133: “初始化”: 从“unsigned char *”到“QueryInfo *”的类型不兼容
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(44,49): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(55,96): warning C4244: “函数”: 从“time_t”转换到“u_long”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(160,70): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dns.c(155,2): warning C4244: “初始化”: 从“u_long”转换到“unsigned short”，可能丢失数据
+  idMap.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  main.c
+A:\Programer\音乐\Albert_C\VS-C\DNS\DNS\dnsInfo.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
   DNS.vcxproj -> A:\Programer\音乐\Albert_C\VS-C\DNS\x64\Debug\DNS.exe

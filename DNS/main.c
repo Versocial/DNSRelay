@@ -49,7 +49,7 @@ int main() {
 			log("info from client.");
 			char *url=getQueryUrl(dns);
 			dnsInfo info = findIP(url,10);// at least 10s left
-			if(head.qdcount==1&&info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//fliter--local--0
+			if(head.qdcount==1 && getQueryType(dns) == QueryType_A &&info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//fliter--local--0
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head)); 
 				addQuery(dns, info.url);
@@ -63,7 +63,7 @@ int main() {
 				log("send a local refusing visit : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				sendDNS(dns, &client);
 			}
-			else if (head.qdcount==1&&info.ipSet.size>0) {//find the domain-not-local0
+			else if (head.qdcount==1&&getQueryType(dns)==QueryType_A&&info.ipSet.size>0) {//find the domain-not-local0
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head));
 				unsigned char offset= addQuery(dns, info.url);

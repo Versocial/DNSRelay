@@ -65,7 +65,8 @@ unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
 int sendDNS(DNS* dns, SOCKADDR* dest)
 {
   int flag= sendInfoTo(dns->buffer, dns->length, dest); 
-  if (flag == -1)log("sendDNS error: dns id %d",((DNShead*)dns->buffer)->id);
+  if (flag == -1)log("sendDNS error: dns id %d", ((DNShead*)dns->buffer)->id);
+  else log("send The %d ans:%d",getHead(dns).id,getHead(dns).ancount);
   return flag;
 }
 
@@ -125,6 +126,11 @@ int recvDNS(DNS* dns, SOCKADDR* source)
      //if(dns->buffer)
      return dns->buffer + sizeof(DNShead);
  }
+ enum QueryType getQueryType(DNS*dns){
+     char* c = getQueryUrl(dns);
+     while (*c != 0)c++;
+     return ntohs( ((struct QueryInfo*)(c + 1))->type);
+ };
 
 IPLink getAnswerIPv4(DNS* dns) {
     int number = 0;

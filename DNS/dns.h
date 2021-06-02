@@ -94,6 +94,8 @@ enum QueryClass //指定信息的协议组。
 };
 
 
+enum QueryType getQueryType(DNS* dns);
+
 IPLink getAnswerIPv4(DNS* dns);
 
 char* getQueryUrl(DNS* dns);
@@ -121,20 +123,5 @@ void printDNS(DNS* dns, int len);
 void justChangeId(DNS* dns, unsigned short id);
 
 #endif // !DNSH
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

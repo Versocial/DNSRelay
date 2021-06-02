@@ -1,0 +1,35 @@
+
+Start Time : 2021/06/02 22:57:01 
+
+[ 2021/06/02 22:58:16 ]   >>recv id:32273 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:58:16 ]   info from client.
+
+[ 2021/06/02 22:58:16 ]   change id from 32273 to 0 and send to Server
+
+[ 2021/06/02 22:58:16 ]   >>recv id:0 qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:58:16 ]   Response id 0 info from server url boss	cnwangjiecom .
+
+[ 2021/06/02 22:58:16 ]    xxxxxx
+
+[ 2021/06/02 22:58:16 ]   find 1 IP
+
+[ 2021/06/02 22:58:16 ]   send back id 32273 to client IP: 127.0.0.1
+
+[ 2021/06/02 22:58:16 ]   >>recv id:18710 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:58:16 ]   info from client.
+
+[ 2021/06/02 22:58:16 ]   change id from 18710 to 0 and send to Server
+
+[ 2021/06/02 22:58:16 ]   >>recv id:0 qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:58:16 ]   Response id 0 info from server url 
+tn2-2cn-01freepboxtk .
+
+[ 2021/06/02 22:58:16 ]    xxxxxx
+
+[ 2021/06/02 22:58:16 ]   find 1 IP
+
+[ 2021/06/02 22:58:16 ]   send back id 18710 to client IP: 127.0.0.1
