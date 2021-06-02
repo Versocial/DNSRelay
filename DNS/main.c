@@ -16,11 +16,14 @@ int main() {
 	initIPFile("../res/dnsrelay.txt");
 	system("pause");
 	
+	time_t lastFreshTime = time(NULL);
+	int recvTimes = 0;
 
 	while (1) {
-		int len = recvDNS(dns, &client); if (len == -1)continue;
+		int len = recvDNS(dns, &client); //log("recv %d", len);
 		DNShead head = getHead(dns);
-		log(">>recv id:%d qr:%d from IP %s",head.id,head.flag.qr, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
+		if (len == -1) { WSAGetLastError(); log(">>recv -1 from ip: %s port:%d -id %d", inet_ntoa(((struct sockaddr_in*)&client)->sin_addr), ntohs(((struct sockaddr_in*)&client)->sin_port), head.id); continue; }
+		log(">>recv id:%d qr:%d ancount:%d qdcount:%d from IP %s",head.id, head.flag.qr, head.ancount,head.qdcount, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 		
 		if (head.flag.qr == 1) {//response
 			///...
@@ -34,7 +37,7 @@ int main() {
 					addIP(getAnswerIPv4(dns), getQueryUrl(dns));
 					log("send back %d to client IP: %s", info.id, inet_ntoa(((struct sockaddr_in*)&info.addr)->sin_addr));
 				}
-				else log("find nothing match this id.");
+				else log("find nothing match this id %d.",head.id);
 			}
 			else {
 				log("recv a response from unexpected ip: %s port:%d", inet_ntoa(((struct sockaddr_in*)&client)->sin_addr), ntohs(((struct sockaddr_in*)&client)->sin_port));
@@ -43,10 +46,8 @@ int main() {
 		else {//query
 			log("info from client.");
 			char *url=getQueryUrl(dns);
-			log("url");
 			dnsInfo info = findIP(url,10);// at least 10
-			log("find");
-			if (info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//fliter--local
+			if(head.qdcount==1&&info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//fliter--local
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head)); 
 				addQuery(dns, info.url);
@@ -60,11 +61,12 @@ int main() {
 				log("send a local refusing visit : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				sendDNS(dns, &client);
 			}
-			else if (info.ipSet.size>0) {//find the domain-not-local
+			else if (head.qdcount==1&&info.ipSet.size>0) {//find the domain-not-local
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head));
 				unsigned char offset= addQuery(dns, info.url);
 				addAnswer(dns, &info,offset);
+				
 				head.id = ntohs(((DNShead*)dns->buffer)->id);
 				head.flag.qr = 1;
 				head.flag.rd = 1;
@@ -73,7 +75,6 @@ int main() {
 				head.ancount = info.ipSet.size;
 				setHead(dns, head);
 				log("send a local or chache info : url [%s] to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
-				//printDNS(dns, dns->length);
 				sendDNS(dns, &client);
 			}
 			else {//not find the domain
@@ -83,7 +84,8 @@ int main() {
 				sendDNS(dns, &DNSserver);
 			}
 		}
-		
+		recvTimes++;
+		if (recvTimes % 15 == 0 && time(NULL) - lastFreshTime > 100); {; fixSpaceWaste(idMap, 6); lastFreshTime = time(NULL);  }
 	}
 	disposeIdTable(idMap);
 	disposeDNS(dns);

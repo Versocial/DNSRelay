@@ -19,9 +19,8 @@ void refresh(IPLink* link, time_t lowestLeft) {
 	time_t t = time(NULL);
 	struct IPNode* now = link->node;
 	struct IPNode* prev = NULL;
-	log("bad@1");
 	while (now != NULL) {
-		if (now->killTime  < t+ lowestLeft) {
+		if (now->killTime!=0&&now->killTime  < t+ lowestLeft) {
 			if (prev == NULL) { link->node = now->next; free(now); now = link->node; }
 			else { prev->next = now->next; free(now); now = prev->next; }
 			link->size--;
@@ -31,7 +30,6 @@ void refresh(IPLink* link, time_t lowestLeft) {
 			now = now->next;
 		}
 	}
-	log("bad@2");
 }
 
 int isLocal(IPLink link) {

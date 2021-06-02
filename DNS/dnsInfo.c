@@ -56,25 +56,22 @@ dnsInfo findIP(const char* url,time_t lowestLeft)
 	 struct DNSINFO* prev = NULL;
 	for (struct DNSINFO* now = theInfo[*url]; now != NULL; prev = now, now = now->next) {
 		if (strncmp(url, now->url, maxUrlLen) == 0) {
-			log("%s@1", now->url);
+			//log("", now->url);
 			refresh(&(now->ipSet),lowestLeft);
-			log("%s@2", now->url);
 			if (now->ipSet.size > 0) {
-				if (prev != NULL) {
+				if (prev != NULL) {//ti qian
 					prev->next = now->next;
 					now->next = theInfo[*url];
 					theInfo[*url] = now;
 				}
-				log("%s@3", now->url);
+				log("find url %s", now->url);
 				return *now;
 			}
 			else {
-				log("%s@4", now->url);
+				log("dated url %s", now->url);
 				if (prev == NULL)theInfo[*url] = now->next;
 				else { prev->next=now->next; }
-				log("%s@5", now->url);
 				free(now);
-				log("%s@6", now->url);
 			}
 			break;
 		}

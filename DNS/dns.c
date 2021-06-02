@@ -36,9 +36,9 @@ unsigned char addQuery(DNS* dns, const char* queryUrl)
 
 unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
 {
+    int number = 0;
     unsigned char offset=urlOffset;
-   
-    for (struct IPNode* ip = info->ipSet.node;ip!=NULL;ip=ip->next) {
+    for (struct IPNode* ip = info->ipSet.node; ip != NULL; ip = ip->next) {
         if (urlOffset == 0) {//0 means no offset can be use.
             memcpy(dns->buffer + dns->length, info->url, strlen(info->url) + 1);
             dns->length += strlen(info->url) + 1;
@@ -49,14 +49,16 @@ unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
             dns->length += 2;
         }
 
-        struct AnswerInfo* answer =(struct AnswerInfo*) dns->buffer + dns->length;
+        struct AnswerInfo* answer = (struct AnswerInfo*)(dns->buffer + dns->length);
         answer->type = htons(QueryType_A);
         answer->class = htons(QueryClass_IN);
         answer->ttl = (ip->killTime == 0) ? htonl(DEFALUTTTL) : htonl(ip->killTime - time(NULL));
         answer->dataLength = htons(4);
         *(uint32_t*)((char*)answer + sizeof(struct AnswerInfo)) = ip->ipv4;
         dns->length += sizeof(struct AnswerInfo) + ntohs(answer->dataLength);
- }
+        number++;
+    }
+    log("add %d answers",number);
     return offset;
 }
 
@@ -109,7 +111,7 @@ int recvDNS(DNS* dns, SOCKADDR* source)
          printf("%2x ", dns->buffer[k]);
          k++;
          if (k % 8== 0)printf("\n");
-     }
+     }printf("\n\n");
  }
 
  void justChangeId(DNS*dns, unsigned short id)
@@ -125,6 +127,8 @@ int recvDNS(DNS* dns, SOCKADDR* source)
  }
 
 IPLink getAnswerIPv4(DNS* dns) {
+    int number = 0;
+    time_t timeNow = time(NULL);
     IPLink link=newIPlink();
      struct IPNode* start=NULL;
      DNShead head = getHead(dns);
@@ -137,17 +141,22 @@ IPLink getAnswerIPv4(DNS* dns) {
          offset += sizeof(struct QueryInfo);//
      }
      for (int i = 0; i < answerNum; i++) {
+
          if (dns->buffer[offset] == 0xc0)offset += 2;
          else { while (dns->buffer[offset] != 0)offset++; offset++; }
          struct AnswerInfo* answerInfo = (struct AnswerInfo*)(dns->buffer + offset);
          int len= ntohs((answerInfo)->dataLength) ;
-         time_t t = ntohs((answerInfo)->ttl) + time(NULL);
+         unsigned short temp1 = ntohl((answerInfo)->ttl);
+
+         time_t t = ntohl((answerInfo)->ttl) + timeNow;
          offset += sizeof(struct AnswerInfo);
          if (ntohs(answerInfo->type)==QueryType_A&&len == 4) {
              addIPNode(&link, (*(uint32_t*)(dns->buffer + offset)), t);
+             number++;
          }
          offset += len;
      }
+     log("find %d IP", number);
      return link;
  }
 

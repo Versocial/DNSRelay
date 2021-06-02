@@ -25,6 +25,6 @@ uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr, time_t
 
 idInfo pollOut(idTable* table, uint16_t id);
 
-void fixSpaceWaste(idTable* table);
+void fixSpaceWaste(idTable* table, time_t lowestLeft);
 
 #endif // !IDMAPH
