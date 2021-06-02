@@ -1,0 +1,140 @@
+
+Start Time : 2021/06/02 22:45:46 
+
+[ 2021/06/02 22:45:51 ]   >>recv id:96 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:45:51 ]   info from client.
+
+[ 2021/06/02 22:45:51 ]   change id from 96 to 0 and send to Server
+
+[ 2021/06/02 22:45:51 ]   >>recv id:0 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:45:51 ]   Response id 0 info from server url baiducom .
+
+[ 2021/06/02 22:45:51 ]    xxxxxx
+
+[ 2021/06/02 22:45:51 ]   find 2 IP
+
+[ 2021/06/02 22:45:51 ]   send back id 96 to client IP: 127.0.0.1
+
+[ 2021/06/02 22:45:51 ]   >>recv id:97 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:45:51 ]   info from client.
+
+[ 2021/06/02 22:45:51 ]   find url : baiducom
+
+[ 2021/06/02 22:45:51 ]   add 2 answers
+
+[ 2021/06/02 22:45:51 ]   send a local or chache infoid 97 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:45:51 ]    yyyyyyyy
+
+[ 2021/06/02 22:46:52 ]   >>recv id:98 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]   info from client.
+
+[ 2021/06/02 22:46:59 ]   find url : baiducom
+
+[ 2021/06/02 22:46:59 ]   add 2 answers
+
+[ 2021/06/02 22:46:59 ]   send a local or chache infoid 98 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]    yyyyyyyy
+
+[ 2021/06/02 22:46:59 ]   >>recv id:99 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]   info from client.
+
+[ 2021/06/02 22:46:59 ]   find url : baiducom
+
+[ 2021/06/02 22:46:59 ]   add 2 answers
+
+[ 2021/06/02 22:46:59 ]   send a local or chache infoid 99 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]    yyyyyyyy
+
+[ 2021/06/02 22:46:59 ]   >>recv id:100 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]   info from client.
+
+[ 2021/06/02 22:46:59 ]   find url : baiducom
+
+[ 2021/06/02 22:46:59 ]   add 2 answers
+
+[ 2021/06/02 22:46:59 ]   send a local or chache infoid 100 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]    yyyyyyyy
+
+[ 2021/06/02 22:46:59 ]   >>recv id:101 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]   info from client.
+
+[ 2021/06/02 22:46:59 ]   find url : baiducom
+
+[ 2021/06/02 22:46:59 ]   add 2 answers
+
+[ 2021/06/02 22:46:59 ]   send a local or chache infoid 101 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:46:59 ]    yyyyyyyy
+
+[ 2021/06/02 22:46:59 ]   >>recv -1 from ip: 127.0.0.1 port:51461 -id 101
+
+[ 2021/06/02 22:46:59 ]   >>recv -1 from ip: 127.0.0.1 port:51462 -id 101
+
+[ 2021/06/02 22:47:00 ]   >>recv -1 from ip: 127.0.0.1 port:51463 -id 101
+
+[ 2021/06/02 22:47:09 ]   >>recv id:102 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:09 ]   info from client.
+
+[ 2021/06/02 22:47:09 ]   find url : baiducom
+
+[ 2021/06/02 22:47:09 ]   add 2 answers
+
+[ 2021/06/02 22:47:09 ]   send a local or chache infoid 102 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:47:09 ]    yyyyyyyy
+
+[ 2021/06/02 22:47:09 ]   >>recv id:103 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:09 ]   info from client.
+
+[ 2021/06/02 22:47:09 ]   find url : baiducom
+
+[ 2021/06/02 22:47:09 ]   add 2 answers
+
+[ 2021/06/02 22:47:09 ]   send a local or chache infoid 103 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:47:09 ]    yyyyyyyy
+
+[ 2021/06/02 22:47:51 ]   >>recv id:104 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   info from client.
+
+[ 2021/06/02 22:47:51 ]   find url : test0cn
+
+[ 2021/06/02 22:47:51 ]   send a local refusing visit : url [test0cn] to ip 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   >>recv id:105 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   info from client.
+
+[ 2021/06/02 22:47:51 ]   find url : test0cn
+
+[ 2021/06/02 22:47:51 ]   send a local refusing visit : url [test0cn] to ip 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   >>recv id:106 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   info from client.
+
+[ 2021/06/02 22:47:51 ]   find url : test0cn
+
+[ 2021/06/02 22:47:51 ]   send a local refusing visit : url [test0cn] to ip 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   >>recv id:107 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:47:51 ]   info from client.
+
+[ 2021/06/02 22:47:51 ]   find url : test0cn
+
+[ 2021/06/02 22:47:51 ]   send a local refusing visit : url [test0cn] to ip 127.0.0.1

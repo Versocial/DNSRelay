@@ -1,0 +1,138 @@
+
+Start Time : 2021/06/02 22:50:14 
+
+[ 2021/06/02 22:50:20 ]   >>recv id:122 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:20 ]   info from client.
+
+[ 2021/06/02 22:50:20 ]   change id from 122 to 0 and send to Server
+
+[ 2021/06/02 22:50:20 ]   >>recv id:0 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:50:20 ]   Response id 0 info from server url baiducom .
+
+[ 2021/06/02 22:50:20 ]    xxxxxx
+
+[ 2021/06/02 22:50:20 ]   find 2 IP
+
+[ 2021/06/02 22:50:20 ]   send back id 122 to client IP: 127.0.0.1
+
+[ 2021/06/02 22:50:20 ]   >>recv id:123 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:20 ]   info from client.
+
+[ 2021/06/02 22:50:20 ]   dated url : baiducom
+
+[ 2021/06/02 22:50:20 ]   change id from 123 to 0 and send to Server
+
+[ 2021/06/02 22:50:20 ]   >>recv id:0 qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:50:20 ]   Response id 0 info from server url baiducom .
+
+[ 2021/06/02 22:50:20 ]    xxxxxx
+
+[ 2021/06/02 22:50:20 ]   find 0 IP
+
+[ 2021/06/02 22:50:20 ]   send back id 123 to client IP: 127.0.0.1
+
+[ 2021/06/02 22:50:30 ]   >>recv id:126 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:30 ]   info from client.
+
+[ 2021/06/02 22:50:30 ]   dated url : baiducom
+
+[ 2021/06/02 22:50:30 ]   change id from 126 to 0 and send to Server
+
+[ 2021/06/02 22:50:30 ]   >>recv id:0 qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/02 22:50:30 ]   Response id 0 info from server url baiducom .
+
+[ 2021/06/02 22:50:30 ]    xxxxxx
+
+[ 2021/06/02 22:50:30 ]   find 2 IP
+
+[ 2021/06/02 22:50:30 ]   send back id 126 to client IP: 127.0.0.1
+
+[ 2021/06/02 22:50:30 ]   >>recv id:127 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:30 ]   info from client.
+
+[ 2021/06/02 22:50:30 ]   find url : baiducom
+
+[ 2021/06/02 22:50:30 ]   add 2 answers
+
+[ 2021/06/02 22:50:30 ]   send a local or chache infoid 127 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:50:30 ]    yyyyyyyy
+
+[ 2021/06/02 22:50:35 ]   >>recv id:130 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:35 ]   info from client.
+
+[ 2021/06/02 22:50:35 ]   find url : baiducom
+
+[ 2021/06/02 22:50:35 ]   add 2 answers
+
+[ 2021/06/02 22:50:35 ]   send a local or chache infoid 130 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:50:35 ]    yyyyyyyy
+
+[ 2021/06/02 22:50:35 ]   >>recv id:131 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:35 ]   info from client.
+
+[ 2021/06/02 22:50:35 ]   find url : baiducom
+
+[ 2021/06/02 22:50:35 ]   add 2 answers
+
+[ 2021/06/02 22:50:35 ]   send a local or chache infoid 131 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:50:35 ]    yyyyyyyy
+
+[ 2021/06/02 22:50:45 ]   >>recv id:134 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:45 ]   info from client.
+
+[ 2021/06/02 22:50:45 ]   find url : baiducom
+
+[ 2021/06/02 22:50:45 ]   add 2 answers
+
+[ 2021/06/02 22:50:45 ]   send a local or chache infoid 134 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:50:45 ]    yyyyyyyy
+
+[ 2021/06/02 22:50:45 ]   >>recv id:135 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:50:45 ]   info from client.
+
+[ 2021/06/02 22:50:45 ]   find url : baiducom
+
+[ 2021/06/02 22:50:45 ]   add 2 answers
+
+[ 2021/06/02 22:50:45 ]   send a local or chache infoid 135 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:50:45 ]    yyyyyyyy
+
+[ 2021/06/02 22:51:10 ]   >>recv id:138 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:51:10 ]   info from client.
+
+[ 2021/06/02 22:51:10 ]   find url : baiducom
+
+[ 2021/06/02 22:51:10 ]   add 2 answers
+
+[ 2021/06/02 22:51:10 ]   send a local or chache infoid 138 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:51:10 ]    yyyyyyyy
+
+[ 2021/06/02 22:51:10 ]   >>recv id:139 qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/02 22:51:10 ]   info from client.
+
+[ 2021/06/02 22:51:10 ]   find url : baiducom
+
+[ 2021/06/02 22:51:10 ]   add 2 answers
+
+[ 2021/06/02 22:51:10 ]   send a local or chache infoid 139 : url [baiducom] to ip 127.0.0.1
+
+[ 2021/06/02 22:51:10 ]    yyyyyyyy

@@ -64,11 +64,11 @@ dnsInfo findIP(const char* url,time_t lowestLeft)
 					now->next = theInfo[*url];
 					theInfo[*url] = now;
 				}
-				log("find url %s", now->url);
+				log("find url : %s", now->url);
 				return *now;
 			}
 			else {
-				log("dated url %s", now->url);
+				log("dated url : %s", now->url);
 				if (prev == NULL)theInfo[*url] = now->next;
 				else { prev->next=now->next; }
 				free(now);
