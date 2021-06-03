@@ -4,16 +4,33 @@
 
 
 
-int main() {
+int main(int argc, char* argv[])
+{
+	char* DNSServerIP = "10.3.9.44";
+	char* filePath = "../res/dnsrelay.txt";
+	if (argc > 1) {
+		if (argc >= 2) {
+			if (strcmp("-d", argv[1]) == 0)setLogMod(1);
+			else if (strcmp("-dd", argv[1]) == 0)setLogMod(2);
+		}
+		if (argc >= 3) {
+			if (inet_addr(argv[2]) != INADDR_NONE) { DNSServerIP = argv[2]; }
+			else log("The ip %s is invalid!",argv[2]);
+		}
+		if (argc >= 4) {
+			filePath = argv[3];
+		}
+	};
+
 	initLog("../res");
 	initSock(NULL,53);
-	SOCKADDR DNSserver = createSockAddr("10.3.9.44",53);
+	SOCKADDR DNSserver = createSockAddr(DNSServerIP,53);
 	DNS* dns = createDNS();
 	SOCKADDR client;
 	DNShead head;
 	memset(&head, 0, sizeof(head));
 	idTable* idMap = createIdTable(0);
-	initIPFile("../res/dnsrelay.txt");
+	initIPFile(filePath);
 	system("pause");
 	
 	time_t lastFreshTime = time(NULL);

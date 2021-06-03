@@ -29,7 +29,7 @@ int initIPFile(const char* path)
 		unsigned int a, b, c, d;
 		fscanf(file, "%d.%d.%d.%d",&a,&b,&c,&d);
 		dnsInfo* now = createDnsInfo();
-		addIPNode( &(now->ipSet), d*256*256*256+c*256*256+b*256+a,0);//net order
+		addIPNode( &(now->ipSet), d<<24+c<<16+b<<8+a,0);//net order
 		fscanf(file, "%s",tempUrl);
 		formalizeURL(now->url, tempUrl);
 		now->next = theInfo[*(now->url)];

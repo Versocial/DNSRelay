@@ -20,6 +20,7 @@ FILE* initLog(const char* path) {
     fprintf(_Log_File, _Log_TimeBuffer);
     return _Log_File;
 }
+
 void log(const char* strFormat, ...) {
     if (mod == 3)return;
 #define fileOK mod!=1
@@ -48,5 +49,16 @@ void setLogMod(int Mod) {
 void closeLog() {
     free(_Log_File);
 }
+
+void logMem(void* mem, int len) {
+    int k = 0;
+    while (k < len) {
+        printf("%02x ",((char*)mem)[k]);
+        k++;
+        if (k % 8 == 0)printf("\n");
+    }printf("\n");
+}
+
+
 
 #endif // !LogC
