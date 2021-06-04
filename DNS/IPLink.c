@@ -6,7 +6,7 @@ IPLink newIPlink() { IPLink link; link.node = NULL; link.size = 0; return link; 
 void  addIPNode(IPLink* link, unsigned int ipv4, unsigned int ttl) {
 	struct IPNode* now = calloc(1, sizeof(struct IPNode));
 	if (now == NULL) {
-		log("IPNode calloc error."); return;
+		log_1("IPNode calloc error."); return;
 	}
 	now->ipv4 = ipv4;
 	now->killTime = ttl;
@@ -33,5 +33,5 @@ void refresh(IPLink* link, time_t lowestLeft) {
 }
 
 int isLocal(IPLink link) {
-	return link.node && link.node->killTime == 0;
+	return link.size&&link.node && link.node->killTime == 0;
 }

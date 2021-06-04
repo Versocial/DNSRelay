@@ -23,18 +23,21 @@ int initIPFile(const char* path)
 {
 	memset(theInfo, 0, 256 * sizeof(struct DNSINFO*));
 	FILE *file = fopen(path, "r");
-	if (file == NULL) { log("IPfile init fopen %s error.",path); return -1; }
+	if (file == NULL) { log_1("IPfile init fopen %s error.",path); return -1; }
 	char tempUrl[maxUrlLen + 1];
+	int number = 0;
 	for (;!feof(file);) {
 		unsigned int a, b, c, d;
 		fscanf(file, "%d.%d.%d.%d",&a,&b,&c,&d);
 		dnsInfo* now = createDnsInfo();
-		addIPNode( &(now->ipSet), d<<24+c<<16+b<<8+a,0);//net order
+		addIPNode( &(now->ipSet), (d<<24)+(c<<16)+(b<<8)+a,0);//net order
 		fscanf(file, "%s",tempUrl);
 		formalizeURL(now->url, tempUrl);
 		now->next = theInfo[*(now->url)];
 		theInfo[*(now->url)] = now;
+		number++;
 	}
+	log_1("IPfile init %d ip in %s",number,path);
 	fclose(file);
 	return 0;
 }
@@ -64,11 +67,11 @@ dnsInfo findIP(const char* url,time_t lowestLeft)
 					now->next = theInfo[*url];
 					theInfo[*url] = now;
 				}
-				log("find url : %s", now->url);
+				log_2("Find url : %s", now->url);
 				return *now;
 			}
 			else {
-				log("dated url : %s", now->url);
+				log_1("Dated url : %s", now->url);
 				if (prev == NULL)theInfo[*url] = now->next;
 				else { prev->next=now->next; }
 				free(now);
@@ -93,9 +96,5 @@ dnsInfo findIP(const char* url,time_t lowestLeft)
 //	fclose(file);
 //	return 0;
 //}
-
-void deleteURL(const char* url)
-{
-}
 
 #endif // !DNSINFOC

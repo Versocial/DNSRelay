@@ -2,7 +2,7 @@
 
 idTable* createIdTable(uint16_t minId) {
 	idTable* table = (idTable*)calloc(1, sizeof(idTable));
-	if (table == NULL) { log("createIdTable calloc error."); return NULL; };
+	if (table == NULL) { log_1("createIdTable calloc error."); return NULL; };
 	table->minID = minId;
 	return table;
 }
@@ -17,7 +17,7 @@ void disposeIdTable(idTable* table) {
 }
 
 uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr, time_t lifeTime) {
-	if (table == NULL) { log("insert table null."); return 65535; }
+	if (table == NULL) { log_1("insert table null."); return 65535; }
 	int num = TableSize;
 	time_t t = time(NULL);
 	while (table->used == TableSize) {// find a not used out table or the final table
@@ -26,7 +26,7 @@ uint16_t insertIdTable(idTable* table, uint16_t id, const SOCKADDR* addr, time_t
 			for (int i = 0; i < TableSize; i++) {
 				if (table->info[i].deadTime == 0)continue;//***not use
 				if (t > table->info[i].deadTime) {//***find dated one so it is  not used out,find the table and num
-					log("id %d time out", table->info->id);
+					log_1("id %d time out", table->info->id);
 					if (num == TableSize)num = i;
 					table->info[i].deadTime = 0;
 					table->used--;
@@ -86,7 +86,7 @@ void fixSpaceWaste(idTable*now,time_t lowestLeft) {
 		for (int k=0, left=now->used;left>0&&k<TableSize; k++) {
 			if (now->info[k].deadTime != 0) {
 				left--; 
-				if (now->info[k].deadTime < t) { log("idMap : delete dated id %d",now->info[k].id); now->info[k].deadTime = 0; now->used--; }
+				if (now->info[k].deadTime < t) { log_1("idMap : delete dated id %d",now->info[k].id); now->info[k].deadTime = 0; now->used--; }
 			}
 		}
 		now = now->next;

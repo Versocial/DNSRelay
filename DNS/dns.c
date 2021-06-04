@@ -7,9 +7,9 @@
 DNS* createDNS()
 {
     DNS* dns = calloc(1,sizeof(DNS));
-    if (dns == NULL) { log("DNS calloc error.\n"); }
+    if (dns == NULL) { log_1("DNS calloc error.\n"); return NULL; }
     dns->buffer = calloc(DNS_Buffer_Size, sizeof(char));
-    if (dns->buffer == NULL) { log("DNS buffer calloc error.\n "); }
+    if (dns->buffer == NULL) { log_1("DNS buffer calloc error.\n "); return NULL; }
     dns->bufferLen = DNS_Buffer_Size;
     dns->length = sizeof(DNShead);
     //....
@@ -58,15 +58,15 @@ unsigned char addAnswer(DNS* dns,const dnsInfo* info, unsigned char urlOffset)
         dns->length += sizeof(struct AnswerInfo) + ntohs(answer->dataLength);
         number++;
     }
-    log("add %d answers",number);
+    log_2("Add %d answers into dns [ id:%d ]",number, ((DNShead*)dns->buffer)->id);
     return offset;
 }
 
 int sendDNS(DNS* dns, SOCKADDR* dest)
 {
   int flag= sendInfoTo(dns->buffer, dns->length, dest); 
-  if (flag == -1)log("sendDNS error: dns id %d", ((DNShead*)dns->buffer)->id);
-  else log("send The %d ans:%d",getHead(dns).id,getHead(dns).ancount);
+  if (flag == -1)log_1("Send DNS error: dns [ id:%d ]", ((DNShead*)dns->buffer)->id);
+  log_2("Send DNS finish: dns id %d", ((DNShead*)dns->buffer)->id);
   return flag;
 }
 
@@ -109,7 +109,7 @@ int recvDNS(DNS* dns, SOCKADDR* source)
  {
      int k = 0;
      while (k <len) {
-         printf("%2x ", dns->buffer[k]);
+         printf("%2X ", dns->buffer[k]);
          k++;
          if (k % 8== 0)printf("\n");
      }printf("\n\n");
@@ -162,7 +162,7 @@ IPLink getAnswerIPv4(DNS* dns) {
          }
          offset += len;
      }
-     log("find %d IP", number);
+     log_2("Find %d IP in dns [ id:%d] ", number,((DNShead*)dns->buffer)->id);
      return link;
  }
 

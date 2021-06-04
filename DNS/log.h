@@ -10,8 +10,10 @@
 
 //log.c
 FILE* initLog(const char* path);
-void log(const char* strFormat, ...);
-void setLogMod(int Mod);
+void log_1(const char* strFormat, ...);
+void log_2(const char* strFormat, ...);
+void logMem_2(void* mem, int len);
+void setLogMod(int fileMod_, int stdoutMod_);
 void closeLog();
 
 #endif // !LOGH
