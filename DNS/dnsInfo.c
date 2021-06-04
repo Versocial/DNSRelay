@@ -37,7 +37,7 @@ int initIPFile(const char* path)
 		theInfo[*(now->url)] = now;
 		number++;
 	}
-	log_1("IPfile init %d ip in %s",number,path);
+	log_1("Chache: IPfile init %d ip in %s",number,path);
 	fclose(file);
 	return 0;
 }
@@ -67,11 +67,11 @@ dnsInfo findIP(const char* url,time_t lowestLeft)
 					now->next = theInfo[*url];
 					theInfo[*url] = now;
 				}
-				log_2("Find url : %s", now->url);
+				log_2("Chache: Find url : %s", now->url);
 				return *now;
 			}
 			else {
-				log_1("Dated url : %s", now->url);
+				log_1("Chache: Dated url : %s", now->url);
 				if (prev == NULL)theInfo[*url] = now->next;
 				else { prev->next=now->next; }
 				free(now);

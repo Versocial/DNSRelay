@@ -33,8 +33,8 @@ int main(int argc, char* argv[])
 	while (1) {
 		int len = recvDNS(dns, &client); 
 		DNShead head = getHead(dns);
-		if (len == -1) {  log_1("**Recv -1 from ip: %s port:%d -id %d [error: %d] ", inet_ntoa(((struct sockaddr_in*)&client)->sin_addr), ntohs(((struct sockaddr_in*)&client)->sin_port), head.id, WSAGetLastError()); continue; }
-		log_1(">>Recv [ id:%d ] qr:%d ancount:%d qdcount:%d from IP %s",head.id, head.flag.qr, head.ancount,head.qdcount, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
+		if (len == -1||len==0) {  log_1("****>>Recv return %d from ip: %s port:%d -id %d [error: %d] ",len, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr), ntohs(((struct sockaddr_in*)&client)->sin_port), head.id, WSAGetLastError()); continue; }
+		log_1("==>>Recv [ id:%d ] qr:%d ancount:%d qdcount:%d from IP %s",head.id, head.flag.qr, head.ancount,head.qdcount, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 		logMem_2(dns, dns->length);
 		if (head.flag.qr == 1) {//response
 			///...
@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 				idInfo info = pollOut(idMap, head.id);
 				if (info.deadTime != 0) {
 					justChangeId(dns, info.id);
-					log_1("<<Send back it as [ id:%d ] to client IP: %s", info.id, inet_ntoa(((struct sockaddr_in*)&info.addr)->sin_addr));
+					log_1("<<==Send back it as [ id:%d ] to client IP: %s", info.id, inet_ntoa(((struct sockaddr_in*)&info.addr)->sin_addr));
 					sendDNS(dns, &info.addr);
 					logMem_2(dns, dns->length);
 					addIP(getAnswerIPv4(dns), getQueryUrl(dns));
@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 				head.flag.rcode = 3;//name_error
 				head.qdcount = 1;
 				setHead(dns, head);
-				log_1("<<Send a local refusing visit for %s to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
+				log_1("<<==Send a local refusing visit for %s to ip %s", info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr));
 				sendDNS(dns, &client);
 				logMem_2(dns, dns->length);
 			}
@@ -86,7 +86,7 @@ int main(int argc, char* argv[])
 				head.qdcount = 1;
 				head.ancount = info.ipSet.size;
 				setHead(dns, head);
-				log_1("<<Send a local or chache info [ id %d ]: url [%s] to ip %s with %d answers",head.id, info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr),head.ancount);
+				log_1("<<==Send a local or chache info [ id %d ]: url [%s] to ip %s with %d answers",head.id, info.url, inet_ntoa(((struct sockaddr_in*)&client)->sin_addr),head.ancount);
 				sendDNS(dns, &client);
 				logMem_2(dns, dns->length);
 			}
@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 				log_1("[ id:%d ] maybe query for %s from client.", head.id, dns->buffer + sizeof(DNShead));
 				uint16_t id = insertIdTable(idMap, head.id, &client, 100);
 				justChangeId(dns, id);
-				log_1("<<Change id from %d to %d and send to Server", head.id, id);
+				log_1("<<==Change id from %d to %d and send to Server", head.id, id);
 				sendDNS(dns, &DNSserver);
 				logMem_2(dns, dns->length);
 			}
