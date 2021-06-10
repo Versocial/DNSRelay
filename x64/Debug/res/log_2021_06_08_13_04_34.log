@@ -1,0 +1,98 @@
+
+{LOG }: Start Time = 2021/06/08 13:04:34 
+
+[ 2021/06/08 13:04:34 ]   Chache: IPfile init 464 ip in ../res/dnsrelay.txt
+
+[ 2021/06/08 13:05:24 ]   ==>>Recv [ id:45323 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:24 ]   [ id:45323 ] maybe query for hktestas9929xyz from client.
+
+[ 2021/06/08 13:05:24 ]   <<==Change id from 45323 to 0 and send to Server
+
+[ 2021/06/08 13:05:24 ]   ==>>Recv [ id:0 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:24 ]   <<==Send back it as [ id:45323 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:26 ]   ==>>Recv [ id:8234 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:26 ]   [ id:8234 ] maybe query for ecsofficecom from client.
+
+[ 2021/06/08 13:05:26 ]   <<==Change id from 8234 to 0 and send to Server
+
+[ 2021/06/08 13:05:26 ]   ==>>Recv [ id:0 ] qr:1 ancount:5 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:26 ]   <<==Send back it as [ id:8234 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:31 ]   ==>>Recv [ id:22075 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:31 ]   [ id:22075 ] maybe query for loginlivecom from client.
+
+[ 2021/06/08 13:05:31 ]   <<==Change id from 22075 to 0 and send to Server
+
+[ 2021/06/08 13:05:31 ]   ==>>Recv [ id:0 ] qr:1 ancount:12 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:31 ]   <<==Send back it as [ id:22075 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:36 ]   ==>>Recv [ id:54431 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:36 ]   [ id:54431 ] maybe query for boss	cnwangjiecom from client.
+
+[ 2021/06/08 13:05:36 ]   <<==Change id from 54431 to 0 and send to Server
+
+[ 2021/06/08 13:05:36 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:36 ]   <<==Send back it as [ id:54431 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 13:05:47 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:47 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   Query [ id:2 ] for test0cn from client.
+
+[ 2021/06/08 13:05:47 ]   <<==Send a local refusing visit for test0cn to ip 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   Query [ id:3 ] for test0cn from client.
+
+[ 2021/06/08 13:05:47 ]   <<==Send a local refusing visit for test0cn to ip 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:4 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   Query [ id:4 ] for test0cn from client.
+
+[ 2021/06/08 13:05:47 ]   <<==Send a local refusing visit for test0cn to ip 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   ==>>Recv [ id:5 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:47 ]   Query [ id:5 ] for test0cn from client.
+
+[ 2021/06/08 13:05:47 ]   <<==Send a local refusing visit for test0cn to ip 127.0.0.1
+
+[ 2021/06/08 13:05:50 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:50 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 13:05:50 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 13:05:50 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 13:05:50 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 13:05:50 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:05:50 ]   IPV4 Query [ id:2 ] for test1cn from client.
+
+[ 2021/06/08 13:05:50 ]   <<==Send a local or chache info [ id 2 ]: url [test1cn] to ip 127.0.0.1 with 1 answers
+
+[ 2021/06/08 13:05:50 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 13:06:03 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1

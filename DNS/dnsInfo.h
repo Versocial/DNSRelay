@@ -11,23 +11,18 @@
 #define maxIpLen 30
 #define maxUrlLen 253
 
-
 typedef struct DNSINFO {
 	char url[maxUrlLen+1];
 	IPLink ipSet;
 	struct DNSINFO* next;
 } dnsInfo;
 
-static  dnsInfo* theInfo[256];//hash link
+static  dnsInfo* theInfo[maxUrlLen+2];//hash link
 
 dnsInfo* createDnsInfo();
-
 int initIPFile(const char* path);
-
 void addIP(IPLink ip, const char* url);
-
 dnsInfo findIP(const char* url, time_t lowestLeft);
-
 int formalizeURL(char dest[], const char* src);
 
 #endif // !DNSINFOH

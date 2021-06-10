@@ -95,33 +95,21 @@ enum QueryClass //指定信息的协议组。
 
 
 enum QueryType getQueryType(DNS* dns);
-
 IPLink getAnswerIPv4(DNS* dns);
-
 char* getQueryUrl(DNS* dns);
-
 DNS* createDNS();
-
 void disposeDNS(DNS* dns);
-
 unsigned char addQuery(DNS* dns, const char* queryUrl);
-
 unsigned char addAnswer(DNS* dns, const dnsInfo* info, unsigned char urlOffset);
-
 int sendDNS(DNS* dns, SOCKADDR* dest);
-
 int recvDNS(DNS* dns, SOCKADDR* source);
-
 DNShead getHead(DNS* dns);
-
 void clearDNS(DNS* dns);
-
 void setHead(DNS* dns, DNShead head);
-
 void printDNS(DNS* dns, int len);
-
 void justChangeId(DNS* dns, unsigned short id);
 
 #endif // !DNSH
+
 
 

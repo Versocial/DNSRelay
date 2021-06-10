@@ -1,0 +1,242 @@
+
+{LOG }: Start Time = 2021/06/04 23:23:10 
+
+[ 2021/06/04 23:23:10 ]   Chache: IPfile init 464 ip in ../res/dnsrelay.txt
+
+[ 2021/06/04 23:23:11 ]   ==>>Recv [ id:64733 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 3A 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 
+
+[ 2021/06/04 23:23:11 ]   [ id:64733 ] maybe query for stopservicechshapblobcorewindowsnet from client.
+
+[ 2021/06/04 23:23:11 ]   <<==Change id from 64733 to 0 and send to Server
+
+[ 2021/06/04 23:23:11 ]   Send DNS finish: dns id 0
+00 00 01 00 3A 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 
+
+[ 2021/06/04 23:23:11 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 86 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 00 00 00 00 
+EB C4 5F 37 00 15 00 90 
+70 5A 98 31 9B 02 00 00 
+2C 00 00 00 00 00 00 00 
+A0 F4 9A 31 9B 02 
+
+[ 2021/06/04 23:23:11 ]   Response [ id:0 ] from server : 0 answers for query: stopservicechshapblobcorewindowsnet .
+
+[ 2021/06/04 23:23:11 ]   <<==Send back it as [ id:64733 ] to client IP: 127.0.0.1
+
+[ 2021/06/04 23:23:11 ]   Send DNS finish: dns id 56828
+00 00 01 00 86 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 00 00 00 00 
+EB C4 5F 37 00 15 00 90 
+70 5A 98 31 9B 02 00 00 
+2C 00 00 00 00 00 00 00 
+A0 F4 9A 31 9B 02 
+
+[ 2021/06/04 23:23:11 ]   Find 0 IP in dns [ id:56828] 
+
+[ 2021/06/04 23:23:15 ]   ==>>Recv [ id:45964 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 
+
+[ 2021/06/04 23:23:15 ]   [ id:45964 ] maybe query for githubcom from client.
+
+[ 2021/06/04 23:23:15 ]   <<==Change id from 45964 to 0 and send to Server
+
+[ 2021/06/04 23:23:15 ]   Send DNS finish: dns id 0
+00 00 01 00 1C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 
+
+[ 2021/06/04 23:23:15 ]   ==>>Recv [ id:57658 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 
+
+[ 2021/06/04 23:23:15 ]   [ id:57658 ] maybe query for githubcom from client.
+
+[ 2021/06/04 23:23:15 ]   <<==Change id from 57658 to 1 and send to Server
+
+[ 2021/06/04 23:23:15 ]   Send DNS finish: dns id 256
+00 00 01 00 1C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 
+
+[ 2021/06/04 23:23:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 2C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF 
+
+[ 2021/06/04 23:23:15 ]   Response [ id:0 ] from server : 1 answers for query: githubcom .
+
+[ 2021/06/04 23:23:15 ]   <<==Send back it as [ id:45964 ] to client IP: 127.0.0.1
+
+[ 2021/06/04 23:23:15 ]   Send DNS finish: dns id 36019
+00 00 01 00 2C 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF 
+
+[ 2021/06/04 23:23:15 ]   Find 1 IP in dns [ id:36019] 
+
+[ 2021/06/04 23:23:15 ]   ==>>Recv [ id:1 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 5D 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 
+
+[ 2021/06/04 23:23:15 ]   Response [ id:1 ] from server : 0 answers for query: githubcom .
+
+[ 2021/06/04 23:23:15 ]   <<==Send back it as [ id:57658 ] to client IP: 127.0.0.1
+
+[ 2021/06/04 23:23:15 ]   Send DNS finish: dns id 15073
+00 00 01 00 5D 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 
+
+[ 2021/06/04 23:23:15 ]   Find 0 IP in dns [ id:15073] 
+
+[ 2021/06/04 23:23:20 ]   ==>>Recv [ id:30907 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 21 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 
+
+[ 2021/06/04 23:23:20 ]   [ id:30907 ] maybe query for gzyddasaricpw from client.
+
+[ 2021/06/04 23:23:20 ]   <<==Change id from 30907 to 0 and send to Server
+
+[ 2021/06/04 23:23:20 ]   Send DNS finish: dns id 0
+00 00 01 00 21 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 
+
+[ 2021/06/04 23:23:20 ]   ==>>Recv [ id:0 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 80 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 00 00 00 00 
+EB C4 5F 37 00 15 00 90 
+70 5A 98 31 9B 02 00 00 
+2C 00 00 00 00 00 00 00 
+
+
+[ 2021/06/04 23:23:20 ]   Response [ id:0 ] from server : 3 answers for query: gzyddasaricpw .
+
+[ 2021/06/04 23:23:20 ]   <<==Send back it as [ id:30907 ] to client IP: 127.0.0.1
+
+[ 2021/06/04 23:23:20 ]   Send DNS finish: dns id 47992
+00 00 01 00 80 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 00 00 00 00 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 24 19 00 00 
+4D F3 7F AC DA 58 0C 49 
+84 3E 57 BA EB 1B AF EF 
+00 00 00 00 00 00 00 00 
+EB C4 5F 37 00 15 00 90 
+70 5A 98 31 9B 02 00 00 
+2C 00 00 00 00 00 00 00 
+
+
+[ 2021/06/04 23:23:20 ]   Find 1 IP in dns [ id:47992] 
+
+[ 2021/06/04 23:23:23 ]   ==>>Recv [ id:4951 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 21 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 
+
+[ 2021/06/04 23:23:23 ]   Chache: Dated url : gzyddasaricpw
+
+[ 2021/06/04 23:23:23 ]   [ id:4951 ] maybe query for gzyddasaricpw from client.
+
+[ 2021/06/04 23:23:23 ]   <<==Change id from 4951 to 0 and send to Server
+
+[ 2021/06/04 23:23:23 ]   Send DNS finish: dns id 0
+00 00 01 00 21 00 00 00 
+90 E5 99 31 9B 02 00 00 
+FD FD FD FD 00 00 00 00 
+F6 C4 5A 37 00 14 00 90 
+50 

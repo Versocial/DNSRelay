@@ -153,7 +153,6 @@
   <ItemGroup>
     <ClInclude Include="dns.h" />
     <ClInclude Include="dnsInfo.h" />
-    <ClInclude Include="dnsRelay.h" />
     <ClInclude Include="idMap.h" />
     <ClInclude Include="IP.h" />
     <ClInclude Include="log.h" />

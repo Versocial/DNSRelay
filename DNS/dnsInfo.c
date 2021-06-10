@@ -21,7 +21,7 @@ dnsInfo* createDnsInfo()
 
 int initIPFile(const char* path)
 {
-	memset(theInfo, 0, 256 * sizeof(struct DNSINFO*));
+	memset(theInfo, 0, (maxUrlLen+2) * sizeof(struct DNSINFO*));
 	FILE *file = fopen(path, "r");
 	if (file == NULL) { log_1("IPfile init fopen %s error.",path); return -1; }
 	char tempUrl[maxUrlLen + 1];
@@ -33,8 +33,8 @@ int initIPFile(const char* path)
 		addIPNode( &(now->ipSet), (d<<24)+(c<<16)+(b<<8)+a,0);//net order
 		fscanf(file, "%s",tempUrl);
 		formalizeURL(now->url, tempUrl);
-		now->next = theInfo[*(now->url)];
-		theInfo[*(now->url)] = now;
+		now->next = theInfo[strlen(now->url)];
+		theInfo[strlen(now->url)] = now;
 		number++;
 	}
 	log_1("Chache: IPfile init %d ip in %s",number,path);
@@ -48,8 +48,8 @@ int initIPFile(const char* path)
 void addIP(IPLink ip, const char* url)
 {
 	struct DNSINFO* temp = calloc(1,sizeof(struct DNSINFO));//calloc 自动初始化为0
-	temp->next = theInfo[*url];
-	theInfo[*url] = temp;
+	temp->next = theInfo[strlen(url)];
+	theInfo[strlen(url)] = temp;
 	temp->ipSet = ip;
 	strncpy(temp->url, url, maxUrlLen);
 }
@@ -57,22 +57,22 @@ void addIP(IPLink ip, const char* url)
 dnsInfo findIP(const char* url,time_t lowestLeft)
 {
 	 struct DNSINFO* prev = NULL;
-	for (struct DNSINFO* now = theInfo[*url]; now != NULL; prev = now, now = now->next) {
+	for (struct DNSINFO* now = theInfo[strlen(url)]; now != NULL; prev = now, now = now->next) {
 		if (strncmp(url, now->url, maxUrlLen) == 0) {
 			//log("", now->url);
 			refresh(&(now->ipSet),lowestLeft);
 			if (now->ipSet.size > 0) {
 				if (prev != NULL) {//ti qian
 					prev->next = now->next;
-					now->next = theInfo[*url];
-					theInfo[*url] = now;
+					now->next = theInfo[strlen(url)];
+					theInfo[strlen(url)] = now;
 				}
 				log_2("Chache: Find url : %s", now->url);
 				return *now;
 			}
 			else {
 				log_1("Chache: Dated url : %s", now->url);
-				if (prev == NULL)theInfo[*url] = now->next;
+				if (prev == NULL)theInfo[strlen(url)] = now->next;
 				else { prev->next=now->next; }
 				free(now);
 			}

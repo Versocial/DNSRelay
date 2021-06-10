@@ -1,13 +1,21 @@
-#ifndef dnsRelayC
-#define dnsRelayC
-#include"dnsRelay.h"
+#ifndef dnsRelayH
+#define dnsRelayH
+#define  _CRT_SECURE_NO_WARNINGS
+#include "log.h"
+#include "sock.h"
+#include "dns.h"
+#include "dnsInfo.h"
+#include "idMap.h"
+
+#endif // dnsRelayH
+
 
 int main(int argc, char* argv[])
 {
 	char* DNSServerIP = "10.3.9.44";
 	char* filePath = "../res/dnsrelay.txt";
 	setLogMod(0, 0);
-	if(argc<=1)setLogMod(2, 2);
+	if(argc<=1)setLogMod(1, 1);
 	for(int i=1;i<argc;i++) {
 		printf("%s_",argv[i]);
 			if (strcmp("-d", argv[i]) == 0)setLogMod(1,1);
@@ -46,7 +54,8 @@ int main(int argc, char* argv[])
 					log_1("<<==Send back it as [ id:%d ] to client IP: %s", info.id, inet_ntoa(((struct sockaddr_in*)&info.addr)->sin_addr));
 					sendDNS(dns, &info.addr);
 					logMem_2(dns, dns->length);
-					addIP(getAnswerIPv4(dns), getQueryUrl(dns));
+					IPLink ipset = getAnswerIPv4(dns);
+					if(ipset.size>0)addIP(ipset, getQueryUrl(dns));
 				}
 				else log_1("**Find nothing match this response [ id %d ].",head.id);
 			}
@@ -56,7 +65,7 @@ int main(int argc, char* argv[])
 		}
 		else {//query
 			char *url=getQueryUrl(dns);
-			dnsInfo info = findIP(url,10);// at least 10s left
+			dnsInfo info = findIP(url,1);// at least 10s left
 			if( /*head.qdcount==1&& getQueryType(dns) == QueryType_A&&*/ info.ipSet.size == 1 && isLocal(info.ipSet)&&info.ipSet.node->ipv4==0) {//find ip 0.0.0.0 in chache
 				log_1("Query [ id:%d ] for %s from client.",head.id,dns->buffer+sizeof(DNShead) );
 				clearDNS(dns);
@@ -74,6 +83,7 @@ int main(int argc, char* argv[])
 				logMem_2(dns, dns->length);
 			}
 			else if (head.qdcount==1&&(getQueryType(dns)==QueryType_A||isLocal(info.ipSet))&&info.ipSet.size>0) {//find ip in chache
+				if (getQueryType(dns) != QueryType_A)continue;
 				log_1("IPV4 Query [ id:%d ] for %s from client.", head.id, dns->buffer + sizeof(DNShead));
 				clearDNS(dns);
 				memset(&head, 0, sizeof(head));
@@ -107,6 +117,3 @@ int main(int argc, char* argv[])
 	closeSocket();
 	closeLog();
 }
-
-
-#endif // !dnsRelayC

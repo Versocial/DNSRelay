@@ -1,0 +1,384 @@
+
+{LOG }: Start Time = 2021/06/08 12:20:50 
+
+[ 2021/06/08 12:20:50 ]   Chache: IPfile init 464 ip in ../res/dnsrelay.txt
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:22782 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:22782 ] maybe query for dcservicesvisualstudiocom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 22782 to 0 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:22782 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:22782 ] maybe query for dcservicesvisualstudiocom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 22782 to 1 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:22782 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:22782 ] maybe query for dcservicesvisualstudiocom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 22782 to 2 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:22782 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:22782 ] maybe query for dcservicesvisualstudiocom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 22782 to 3 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:4083 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:4083 ] maybe query for checkappexec	microsoftcom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 4083 to 4 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:4083 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:4083 ] maybe query for checkappexec	microsoftcom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 4083 to 5 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:4083 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:4083 ] maybe query for checkappexec	microsoftcom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 4083 to 6 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:22782 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   [ id:22782 ] maybe query for dcservicesvisualstudiocom from client.
+
+[ 2021/06/08 12:21:01 ]   <<==Change id from 22782 to 7 and send to Server
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:0 ] qr:1 ancount:7 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:22782 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:1 ] qr:1 ancount:7 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:22782 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:2 ] qr:1 ancount:7 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:22782 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:3 ] qr:1 ancount:7 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:22782 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:4 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:4083 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:5 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:4083 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:6 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:4083 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ==>>Recv [ id:7 ] qr:1 ancount:7 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:01 ]   <<==Send back it as [ id:22782 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:64645 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:64645 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:64645 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:56097 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:56097 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:01 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:64645 -id 22782 [error: 10054] 
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:02 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:02 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:02 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:02 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:02 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:02 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:10 ]   ==>>Recv [ id:63432 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:10 ]   [ id:63432 ] maybe query for az700632vomsecndnet from client.
+
+[ 2021/06/08 12:21:10 ]   <<==Change id from 63432 to 0 and send to Server
+
+[ 2021/06/08 12:21:10 ]   ==>>Recv [ id:0 ] qr:1 ancount:4 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:10 ]   <<==Send back it as [ id:63432 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:11 ]   ==>>Recv [ id:32135 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:11 ]   [ id:32135 ] maybe query for visualstudio-devdiv-c2smsedgenet from client.
+
+[ 2021/06/08 12:21:11 ]   <<==Change id from 32135 to 0 and send to Server
+
+[ 2021/06/08 12:21:11 ]   ==>>Recv [ id:0 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:11 ]   <<==Send back it as [ id:32135 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:15 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:15 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:15 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:15 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:15 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:15 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:15 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:15 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:16 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:16 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:16 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:16 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:16 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:16 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:21:16 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   Chache: Dated url : baiducom
+
+[ 2021/06/08 12:21:16 ]   [ id:2 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:2 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+
+[ 2021/06/08 12:21:16 ]   [ id:3 ] maybe query for baiducom from client.
+
+[ 2021/06/08 12:21:16 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:21:16 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+
+[ 2021/06/08 12:21:16 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1

@@ -50,9 +50,6 @@
     <ClInclude Include="log.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="dnsRelay.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="dnsInfo.h">
       <Filter>头文件</Filter>
     </ClInclude>

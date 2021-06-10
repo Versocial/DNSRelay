@@ -1,0 +1,46 @@
+
+{LOG }: Start Time = 2021/06/05 10:31:05 
+
+[ 2021/06/05 10:31:05 ]   Chache: IPfile init 464 ip in ../res/dnsrelay.txt
+
+[ 2021/06/05 10:31:07 ]   ==>>Recv [ id:2066 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 22 00 00 00 
+90 E5 33 92 BD 01 00 00 
+FD FD FD FD 00 00 00 00 
+D0 B5 A3 28 00 07 00 90 
+50 D8 
+
+[ 2021/06/05 10:31:07 ]   [ id:2066 ] maybe query for dnsmsftncsicom from client.
+
+[ 2021/06/05 10:31:07 ]   <<==Change id from 2066 to 0 and send to Server
+
+[ 2021/06/05 10:31:07 ]   Send DNS finish: dns id 0
+00 00 01 00 22 00 00 00 
+90 E5 33 92 BD 01 00 00 
+FD FD FD FD 00 00 00 00 
+D0 B5 A3 28 00 07 00 90 
+50 D8 
+
+[ 2021/06/05 10:31:07 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 32 00 00 00 
+90 E5 33 92 BD 01 00 00 
+FD FD FD FD 00 00 00 00 
+D0 B5 A3 28 00 07 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 
+
+[ 2021/06/05 10:31:07 ]   Response [ id:0 ] from server : 1 answers for query: dnsmsftncsicom .
+
+[ 2021/06/05 10:31:07 ]   <<==Send back it as [ id:2066 ] to client IP: 127.0.0.1
+
+[ 2021/06/05 10:31:07 ]   Send DNS finish: dns id 4616
+00 00 01 00 32 00 00 00 
+90 E5 33 92 BD 01 00 00 
+FD FD FD FD 00 00 00 00 
+D0 B5 A3 28 00 07 00 90 
+50 D8 3A DF F8 7F 00 00 
+80 31 3E DF F8 7F 00 00 
+00 00 
+
+[ 2021/06/05 10:31:07 ]   Find 1 IP in dns [ id:4616] 

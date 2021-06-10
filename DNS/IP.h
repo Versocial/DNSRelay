@@ -15,11 +15,8 @@ typedef struct {
 };
 
 IPLink newIPlink();
-
 void  addIPNode(IPLink* link, unsigned int ipv4, unsigned int ttl);
-
 void refresh(IPLink* link, time_t lowestLeft);
-
 int isLocal(IPLink link);
 
 #endif // !IPH

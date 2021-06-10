@@ -1,0 +1,880 @@
+
+{LOG }: Start Time = 2021/06/08 12:03:21 
+
+[ 2021/06/08 12:03:21 ]   Chache: IPfile init 464 ip in ../res/dnsrelay.txt
+
+[ 2021/06/08 12:03:24 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:24 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:03:24 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:03:24 ]   Send DNS finish: dns id 0
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:24 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:24 ]   Response [ id:0 ] from server : 0 answers for query: 100127in-addrarpa .
+
+[ 2021/06/08 12:03:24 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:24 ]   Send DNS finish: dns id 256
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:24 ]   Find 0 IP in dns [ id:256] 
+
+[ 2021/06/08 12:03:24 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:24 ]   Chache: Find url : test1cn
+
+[ 2021/06/08 12:03:24 ]   IPV4 Query [ id:2 ] for test1cn from client.
+
+[ 2021/06/08 12:03:24 ]   Add 1 answers into dns [ id:512 ]
+
+[ 2021/06/08 12:03:24 ]   <<==Send a local or chache info [ id 2 ]: url [test1cn] to ip 127.0.0.1 with 1 answers
+
+[ 2021/06/08 12:03:24 ]   Send DNS finish: dns id 512
+00 00 01 00 2A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 
+
+[ 2021/06/08 12:03:24 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:24 ]   Chache: Find url : test1cn
+
+[ 2021/06/08 12:03:24 ]   [ id:3 ] maybe query for test1cn from client.
+
+[ 2021/06/08 12:03:24 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:03:24 ]   Send DNS finish: dns id 0
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:24 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 4F 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 
+
+[ 2021/06/08 12:03:24 ]   Response [ id:0 ] from server : 0 answers for query: test1cn .
+
+[ 2021/06/08 12:03:24 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:24 ]   Send DNS finish: dns id 768
+00 00 01 00 4F 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 
+
+[ 2021/06/08 12:03:24 ]   Find 0 IP in dns [ id:768] 
+
+[ 2021/06/08 12:03:25 ]   ==>>Recv [ id:1 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:25 ]   Chache: Dated url : 100127in-addrarpa
+
+[ 2021/06/08 12:03:25 ]   [ id:1 ] maybe query for 100127in-addrarpa from client.
+
+[ 2021/06/08 12:03:25 ]   <<==Change id from 1 to 0 and send to Server
+
+[ 2021/06/08 12:03:25 ]   Send DNS finish: dns id 0
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:25 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:25 ]   Response [ id:0 ] from server : 0 answers for query: 100127in-addrarpa .
+
+[ 2021/06/08 12:03:25 ]   <<==Send back it as [ id:1 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:25 ]   Send DNS finish: dns id 256
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:26 ]   Find 0 IP in dns [ id:256] 
+
+[ 2021/06/08 12:03:26 ]   ==>>Recv [ id:2 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:26 ]   Chache: Dated url : test1cn
+
+[ 2021/06/08 12:03:26 ]   [ id:2 ] maybe query for test1cn from client.
+
+[ 2021/06/08 12:03:26 ]   <<==Change id from 2 to 0 and send to Server
+
+[ 2021/06/08 12:03:26 ]   Send DNS finish: dns id 0
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:26 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 2A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 
+
+[ 2021/06/08 12:03:26 ]   Response [ id:0 ] from server : 1 answers for query: test1cn .
+
+[ 2021/06/08 12:03:26 ]   <<==Send back it as [ id:2 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:26 ]   Send DNS finish: dns id 512
+00 00 01 00 2A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 
+
+[ 2021/06/08 12:03:26 ]   Find 1 IP in dns [ id:512] 
+
+[ 2021/06/08 12:03:26 ]   ==>>Recv [ id:3 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:26 ]   Chache: Find url : test1cn
+
+[ 2021/06/08 12:03:26 ]   [ id:3 ] maybe query for test1cn from client.
+
+[ 2021/06/08 12:03:26 ]   <<==Change id from 3 to 0 and send to Server
+
+[ 2021/06/08 12:03:26 ]   Send DNS finish: dns id 0
+00 00 01 00 1A 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 
+
+[ 2021/06/08 12:03:26 ]   ==>>Recv [ id:0 ] qr:1 ancount:0 qdcount:1 from IP 10.3.9.44
+00 00 01 00 4F 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 
+
+[ 2021/06/08 12:03:26 ]   Response [ id:0 ] from server : 0 answers for query: test1cn .
+
+[ 2021/06/08 12:03:26 ]   <<==Send back it as [ id:3 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:26 ]   Send DNS finish: dns id 768
+00 00 01 00 4F 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 
+
+[ 2021/06/08 12:03:26 ]   Find 0 IP in dns [ id:768] 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:62744 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 23 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 
+
+[ 2021/06/08 12:03:44 ]   [ id:62744 ] maybe query for hktestas9929xyz from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 62744 to 0 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 0
+00 00 01 00 23 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:40649 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 21 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 
+
+[ 2021/06/08 12:03:44 ]   [ id:40649 ] maybe query for gzyddasaricpw from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 40649 to 1 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 256
+00 00 01 00 21 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:35688 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 2C 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 
+
+[ 2021/06/08 12:03:44 ]   [ id:35688 ] maybe query for 	jp-aga-02cn-jidian-01com from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 35688 to 2 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 512
+00 00 01 00 2C 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:31915 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 24 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 
+
+[ 2021/06/08 12:03:44 ]   [ id:31915 ] maybe query for hnydfreexyzclub from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 31915 to 3 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 768
+00 00 01 00 24 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:59175 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 27 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 
+
+[ 2021/06/08 12:03:44 ]   [ id:59175 ] maybe query for cz-02cn-jidian-01cf from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 59175 to 4 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 1024
+00 00 01 00 27 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:65416 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 26 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 
+
+[ 2021/06/08 12:03:44 ]   [ id:65416 ] maybe query for qd-lt-01freepboxtk from client.
+
+[ 2021/06/08 12:03:44 ]   <<==Change id from 65416 to 5 and send to Server
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 1280
+00 00 01 00 26 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:1 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 80 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+
+
+[ 2021/06/08 12:03:44 ]   Response [ id:1 ] from server : 3 answers for query: gzyddasaricpw .
+
+[ 2021/06/08 12:03:44 ]   <<==Send back it as [ id:40649 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 51614
+00 00 01 00 80 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+
+
+[ 2021/06/08 12:03:44 ]   Find 1 IP in dns [ id:51614] 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:3 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 34 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 
+
+[ 2021/06/08 12:03:44 ]   Response [ id:3 ] from server : 1 answers for query: hnydfreexyzclub .
+
+[ 2021/06/08 12:03:44 ]   <<==Send back it as [ id:31915 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 43900
+00 00 01 00 34 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 
+
+[ 2021/06/08 12:03:44 ]   Find 1 IP in dns [ id:43900] 
+
+[ 2021/06/08 12:03:44 ]   ==>>Recv [ id:4 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 37 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 
+
+[ 2021/06/08 12:03:44 ]   Response [ id:4 ] from server : 1 answers for query: cz-02cn-jidian-01cf .
+
+[ 2021/06/08 12:03:44 ]   <<==Send back it as [ id:59175 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:44 ]   Send DNS finish: dns id 10215
+00 00 01 00 37 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 
+
+[ 2021/06/08 12:03:44 ]   Find 1 IP in dns [ id:10215] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:62744 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 23 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 
+
+[ 2021/06/08 12:03:45 ]   [ id:62744 ] maybe query for hktestas9929xyz from client.
+
+[ 2021/06/08 12:03:45 ]   <<==Change id from 62744 to 1 and send to Server
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 256
+00 00 01 00 23 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:35688 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 2C 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 
+
+[ 2021/06/08 12:03:45 ]   [ id:35688 ] maybe query for 	jp-aga-02cn-jidian-01com from client.
+
+[ 2021/06/08 12:03:45 ]   <<==Change id from 35688 to 3 and send to Server
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 768
+00 00 01 00 2C 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:65416 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 26 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 
+
+[ 2021/06/08 12:03:45 ]   [ id:65416 ] maybe query for qd-lt-01freepboxtk from client.
+
+[ 2021/06/08 12:03:45 ]   <<==Change id from 65416 to 4 and send to Server
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 1024
+00 00 01 00 26 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:0 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:0 ] from server : 3 answers for query: hktestas9929xyz .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:62744 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 6389
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:45 ]   Find 2 IP in dns [ id:6389] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:2 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 81 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+B0 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:2 ] from server : 3 answers for query: 	jp-aga-02cn-jidian-01com .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:35688 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 26763
+00 00 01 00 81 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+B0 
+
+[ 2021/06/08 12:03:45 ]   Find 2 IP in dns [ id:26763] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:5 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 36 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:5 ] from server : 1 answers for query: qd-lt-01freepboxtk .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:65416 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 35071
+00 00 01 00 36 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 
+
+[ 2021/06/08 12:03:45 ]   Find 1 IP in dns [ id:35071] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:1 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:1 ] from server : 3 answers for query: hktestas9929xyz .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:62744 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 6389
+00 00 01 00 5B 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 
+
+[ 2021/06/08 12:03:45 ]   Find 2 IP in dns [ id:6389] 
+
+[ 2021/06/08 12:03:45 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:55842 -id 62744 [error: 10054] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:3 ] qr:1 ancount:3 qdcount:1 from IP 10.3.9.44
+00 00 01 00 81 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+B0 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:3 ] from server : 3 answers for query: 	jp-aga-02cn-jidian-01com .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:35688 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 26763
+00 00 01 00 81 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+6B 00 73 00 79 00 73 00 
+74 00 65 00 6D 00 63 00 
+61 00 6C 00 6C 00 73 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+E3 44 CA DA 6C 16 00 8D 
+10 12 1D AC 25 01 00 00 
+30 DF 1C AC 25 01 00 00 
+B0 
+
+[ 2021/06/08 12:03:45 ]   Find 2 IP in dns [ id:26763] 
+
+[ 2021/06/08 12:03:45 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:51786 -id 35688 [error: 10054] 
+
+[ 2021/06/08 12:03:45 ]   ==>>Recv [ id:4 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 36 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 
+
+[ 2021/06/08 12:03:45 ]   Response [ id:4 ] from server : 1 answers for query: qd-lt-01freepboxtk .
+
+[ 2021/06/08 12:03:45 ]   <<==Send back it as [ id:65416 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:45 ]   Send DNS finish: dns id 35071
+00 00 01 00 36 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 
+
+[ 2021/06/08 12:03:45 ]   Find 1 IP in dns [ id:35071] 
+
+[ 2021/06/08 12:03:45 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:56487 -id 65416 [error: 10054] 
+
+[ 2021/06/08 12:03:51 ]   ==>>Recv [ id:41526 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:51 ]   [ id:41526 ] maybe query for 
+rb01-qd0ltfreepboxtk from client.
+
+[ 2021/06/08 12:03:51 ]   <<==Change id from 41526 to 0 and send to Server
+
+[ 2021/06/08 12:03:51 ]   Send DNS finish: dns id 0
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:51 ]   ==>>Recv [ id:41526 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:51 ]   [ id:41526 ] maybe query for 
+rb01-qd0ltfreepboxtk from client.
+
+[ 2021/06/08 12:03:51 ]   <<==Change id from 41526 to 1 and send to Server
+
+[ 2021/06/08 12:03:51 ]   Send DNS finish: dns id 256
+00 00 01 00 28 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+
+
+[ 2021/06/08 12:03:51 ]   ==>>Recv [ id:1 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 38 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+
+
+[ 2021/06/08 12:03:51 ]   Response [ id:1 ] from server : 1 answers for query: 
+rb01-qd0ltfreepboxtk .
+
+[ 2021/06/08 12:03:51 ]   <<==Send back it as [ id:41526 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:51 ]   Send DNS finish: dns id 13986
+00 00 01 00 38 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+
+
+[ 2021/06/08 12:03:51 ]   Find 1 IP in dns [ id:13986] 
+
+[ 2021/06/08 12:03:52 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 38 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+
+
+[ 2021/06/08 12:03:52 ]   Response [ id:0 ] from server : 1 answers for query: 
+rb01-qd0ltfreepboxtk .
+
+[ 2021/06/08 12:03:52 ]   <<==Send back it as [ id:41526 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:03:52 ]   Send DNS finish: dns id 13986
+00 00 01 00 38 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 33 00 32 00 
+
+
+[ 2021/06/08 12:03:52 ]   Find 1 IP in dns [ id:13986] 
+
+[ 2021/06/08 12:03:52 ]   ****>>Recv return -1 from ip: 127.0.0.1 port:55410 -id 41526 [error: 10054] 
+
+[ 2021/06/08 12:04:11 ]   ==>>Recv [ id:14077 ] qr:0 ancount:0 qdcount:1 from IP 127.0.0.1
+00 00 01 00 24 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 
+
+[ 2021/06/08 12:04:11 ]   [ id:14077 ] maybe query for boss	cnwangjiecom from client.
+
+[ 2021/06/08 12:04:11 ]   <<==Change id from 14077 to 0 and send to Server
+
+[ 2021/06/08 12:04:11 ]   Send DNS finish: dns id 0
+00 00 01 00 24 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 
+
+[ 2021/06/08 12:04:11 ]   ==>>Recv [ id:0 ] qr:1 ancount:1 qdcount:1 from IP 10.3.9.44
+00 00 01 00 34 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 
+
+[ 2021/06/08 12:04:11 ]   Response [ id:0 ] from server : 1 answers for query: boss	cnwangjiecom .
+
+[ 2021/06/08 12:04:11 ]   <<==Send back it as [ id:14077 ] to client IP: 127.0.0.1
+
+[ 2021/06/08 12:04:11 ]   Send DNS finish: dns id 64822
+00 00 01 00 34 00 00 00 
+10 F1 1D AC 25 01 00 00 
+FD FD FD FD 72 00 61 00 
+EE 44 D5 DA 36 15 00 90 
+64 00 69 00 73 00 61 00 
+62 00 6C 00 65 00 77 00 
+69 00 6E 00 
+
+[ 2021/06/08 12:04:11 ]   Find 1 IP in dns [ id:64822] 
